@@ -1,3 +1,14 @@
+#Laboratorio de Redes
+
+Recuerden solo editar el archivo main.tex
+
+Adicionamente en este documento vienen algunos comandos y como trabajar con latex usando la plantilla
+
+Esta ya la Actualice con el nombre del profesor y del ayudante que eran los datos faltantes
+
+
+
+
 # Introducción
 
 Clases de LaTeX para generar artículos y programas de curso personalizados de una forma sencilla que puede incluir el logo y un encabezado de la UDP. 
