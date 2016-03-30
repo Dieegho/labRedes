@@ -1,5 +1,7 @@
 \select@language {spanish}
 \select@language {spanish}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{2}
-\contentsline {section}{\numberline {1.1}\IeC {\textquestiondown }Por qu\IeC {\'e} necesito una secci\IeC {\'o}n?}{2}
 \contentsline {chapter}{\numberline {2}Contenido}{3}
+\contentsline {section}{\numberline {2.1}Topologia y Hadware}{3}
+\contentsline {section}{\numberline {2.2}Datos de equipos}{3}
+\contentsline {section}{\numberline {2.3}Mapa de Red}{3}
