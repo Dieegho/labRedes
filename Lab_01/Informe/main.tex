@@ -46,10 +46,11 @@ El tipo de topología presente en esta experiencia es de arbol, ya que la red pa
   
 \section{Datos de equipos}
 % Aca poner macs e ips and shit...
-Ocupando la consola de los equipos, se pueden recopilar las IPs y las MAC de los equipos. La IP es el numero que identifica al equipo dentro de la red LAN, de tal forma la red saber de que equipo proviene cada trafico, esta está definida por cuatro rangos de 255 valores cada uno en el caso de IPv4. Por otro lado la MAC es el identificador físico de la tarjeta de red del equipo, este no cambia cuando uno se conecta a otra red LAN a diferencia de la dirección IP, la dirección MAC está definida por 6 pares hexadecimales, donde los primeros tres pares son identificador del fabricante y los últimos tres son del controlador de la tarjeta de red.
+Ocupando la consola de los equipos, se pueden recopilar las IPs y las MAC de los equipos. La IP es el numero que identifica al equipo, en este caso dentro dentro de la red LAN, esta utiliza el protocolo IP dentro del modelo TCP/IP, de tal forma la red saber de que equipo proviene cada trafico, esta está definida por cuatro rangos de 256 valores cada uno en el caso de IPv4. Por otro lado la MAC es el identificador físico de la tarjeta de red del equipo, este no cambia cuando uno se conecta a otra red LAN a diferencia de la dirección IP, la dirección MAC está definida por 6 pares hexadecimales, donde los primeros tres pares son identificador del fabricante y los últimos tres son del controlador de la tarjeta de red.
 \\
 
-\setlength{\parindent}{0.5cm} Al analizar las IPs de los equipos, se puede observar que todas son muy similares, defiriendo solamente el ultimo octeto de esta. Esto implica que todos los equipos se encuentran en el mismo rango de red. Por otro lado, también se puede ver que todos los equipos tienen los mismos tres primeros pares de la MAC, lo que implica que las tarjetas de red de estos proceden del mismo fabricante.
+\setlength{\parindent}{0.5cm} Al analizar las IPs de los equipos, se puede observar que todas son muy similares, defiriendo solamente el ultimo octeto de esta, siendo asignadas de manera estática dentro de las configuraciones de las interfaces de red de Ubuntu. Esto implica que todos los equipos se encuentran en el mismo rango de red. Por otro lado, también se puede ver que todos los equipos tienen los mismos tres primeros pares de la MAC, lo que implica que las tarjetas de red de estos proceden del mismo fabricante.
+
 
 
 \pagebreak
