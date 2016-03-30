@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.29)  29 MAR 2016 21:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.29)  30 MAR 2016 01:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -770,7 +770,15 @@ less on input line 43.
 
 [3
 
-] (./main.lof
+] <images/mapa_red.png, id=22, 1083.04625pt x 1464.47125pt>
+File: images/mapa_red.png Graphic file (type png)
+
+<use images/mapa_red.png>
+Package pdftex.def Info: images/mapa_red.png used on input line 46.
+(pdftex.def)             Requested size: 400.72084pt x 541.84589pt.
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
+ [4 <./images/mapa_red.png>] (./main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 2.
@@ -782,9 +790,9 @@ LaTeX Info: Redefining \% on input line 2.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 45.
+less on input line 51.
 
-[4
+[5
 
 ] (./main.aux
 LaTeX Info: Redefining \. on input line 6.
@@ -793,10 +801,10 @@ LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 ) ) 
 Here is how much of TeX's memory you used:
- 14248 strings out of 493304
- 259618 string characters out of 6139871
- 471387 words of memory out of 5000000
- 17457 multiletter control sequences out of 15000+600000
+ 14255 strings out of 493304
+ 259736 string characters out of 6139871
+ 471386 words of memory out of 5000000
+ 17461 multiletter control sequences out of 15000+600000
  5644 words of font info for 21 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  70i,11n,62p,797b,1438s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -804,10 +812,10 @@ Here is how much of TeX's memory you used:
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (5 pages, 80150 bytes).
+Output written on main.pdf (6 pages, 413861 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 45 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
