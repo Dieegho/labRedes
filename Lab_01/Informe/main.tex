@@ -34,23 +34,27 @@ Este laboratorio consta de tres actividades. La primera consiste en identificar 
 
 \chapter{Contenido}
 
-\section{Topologia y Hadware}
-El tipo de topología presente en este caso es de arbol, ya que la red pasa desde el siwtch a todos los host, que en este caso, serían todos los equipos de la sala.
+\section{Topologia y Hardware}
+El tipo de topología presente en esta experiencia es de arbol, ya que la red pasa desde el siwtch a todos los host, que en este caso, serían todos los equipos de la sala.
 \\
  % Aca ponemos el tipo de hardware del switch, etc...
- Con respecto a al hardware de los equipos, el switch es de marca Cisco y el modelo es Catalyst 2960. Entre sus características se encuentran que posee 24 puertos de 10/100, en los cuales se encuentran conectados los equipos de la sala, y dos puertos gigabit. Por otra parte, todo el cableado de los equipos es de categoría 5e y de par directo.
+ 
+\setlength{\parindent}{0.5cm} Con respecto a al hardware de los equipos, el switch es de marca Cisco y el modelo es Catalyst 2960. Entre sus características se encuentran que posee 24 puertos de 10/100, en los cuales se encuentran conectados los equipos de la sala, y dos puertos gigabit. Por otra parte, todo el cableado de los equipos es de categoría 5e y de par directo.
 \begin{center}
 	\includegraphics[scale=.37]{images/switch.png}
 \end{center}
   
 \section{Datos de equipos}
 % Aca poner macs e ips and shit...
-Al analizar las IPs de los equipos, podemos observar que todas son muy similares, defiriendo solamente en un número de esta. Esto implica que todos los equipos se encuentran en el mismo rango de red 
+Ocupando la consola de los equipos, se pueden recopilar las IPs y las MAC de los equipos. La IP es el numero que identifica al equipo dentro de la red LAN, de tal forma la red saber de que equipo proviene cada trafico, esta está definida por cuatro rangos de 255 valores cada uno en el caso de IPv4. Por otro lado la MAC es el identificador físico de la tarjeta de red del equipo, este no cambia cuando uno se conecta a otra red LAN a diferencia de la dirección IP, la dirección MAC está definida por 6 pares hexadecimales, donde los primeros tres pares son identificador del fabricante y los últimos tres son del controlador de la tarjeta de red.
+\\
+
+\setlength{\parindent}{0.5cm} Al analizar las IPs de los equipos, se puede observar que todas son muy similares, defiriendo solamente el ultimo octeto de esta. Esto implica que todos los equipos se encuentran en el mismo rango de red. Por otro lado, también se puede ver que todos los equipos tienen los mismos tres primeros pares de la MAC, lo que implica que las tarjetas de red de estos proceden del mismo fabricante.
 
 
 \pagebreak
 \section{Mapa de Red}
-
+En esta sección se puede observar las características de los equipos y el hardware, además de las conexiones de la red en si. 
 \begin{center}
 	\includegraphics[scale=.37]{images/mapa_red.png} 
 \end{center}
@@ -58,5 +62,7 @@ Al analizar las IPs de los equipos, podemos observar que todas son muy similares
 \listoffigures
 
 \chapter{Conclusión}
+
+
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.29)  30 MAR 2016 17:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.29)  30 MAR 2016 19:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -610,8 +610,6 @@ LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
-
-No file images/switch.jgp.aux.
 )
 \openout1 = `main.aux'.
 
@@ -766,15 +764,24 @@ less on input line 35.
 
 ]
 Cap\'{\i }tulo 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--41
+
+ []
+
 <images/switch.png, id=19, 602.25pt x 301.125pt>
 File: images/switch.png Graphic file (type png)
  <use images/switch.png>
-Package pdftex.def Info: images/switch.png used on input line 43.
+Package pdftex.def Info: images/switch.png used on input line 44.
 (pdftex.def)             Requested size: 222.82901pt x 111.41449pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+ []
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 53.
+less on input line 56.
 
 [3
 
@@ -783,10 +790,10 @@ less on input line 53.
 File: images/mapa_red.png Graphic file (type png)
 
 <use images/mapa_red.png>
-Package pdftex.def Info: images/mapa_red.png used on input line 56.
+Package pdftex.def Info: images/mapa_red.png used on input line 59.
 (pdftex.def)             Requested size: 400.72084pt x 541.84589pt.
-LaTeX Info: Redefining \. on input line 59.
-LaTeX Info: Redefining \% on input line 59.
+LaTeX Info: Redefining \. on input line 62.
+LaTeX Info: Redefining \% on input line 62.
  [4 <./images/mapa_red.png>] (./main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -799,7 +806,7 @@ LaTeX Info: Redefining \% on input line 2.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 61.
+less on input line 64.
 
 [5
 
@@ -807,7 +814,7 @@ less on input line 61.
 Cap\'{\i }tulo 3.
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 63.
+less on input line 68.
 
 [6
 
@@ -819,17 +826,17 @@ LaTeX Info: Redefining \% on input line 10.
 ) ) 
 Here is how much of TeX's memory you used:
  14261 strings out of 493304
- 259849 string characters out of 6139871
+ 259847 string characters out of 6139871
  471429 words of memory out of 5000000
- 17466 multiletter control sequences out of 15000+600000
+ 17467 multiletter control sequences out of 15000+600000
  5644 words of font info for 21 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 70i,11n,62p,797b,1438s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,11n,62p,808b,1438s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (7 pages, 530747 bytes).
+Output written on main.pdf (7 pages, 532050 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  34 compressed objects within 1 object stream
