@@ -14,7 +14,7 @@
 \ayudante{Ayudante \\ Maximiliano Vega}
 
 
-\date{08 de Abril de 2016}
+\date{10 de Abril de 2016} %Cambie la fecha de 8 a 10 no se si importe (?) - Manuel
 
 % Además podemos establecer la facultad y escuela
 % los valores por defecto son los siguientes:
@@ -33,15 +33,44 @@
 %corrijan mi caca
 %recuerden que siempre se habla en tercera persona
 %saludos
-Este laboratorio consistio en crear paquetes de datos con diferentes parámetros para luego enviarlos por la red, con el fin lo lograr comprender como se conforman y comportan estos según sus características. 
-Los paquetes varían principalmente en la MAC, lo que hace que sean recibidos por distintos equipos. Para esto se ocupa Wireshark, programa con el que se puede capturar los paquetes enviados por la red. Una vez hechos y enviados los paquetes, se repite el procedimiento, sólo que esta vez, los equipos en vez de estar conectados a un switch, lo estarán a un hub. 
+Este laboratorio consistió en crear paquetes de datos con diferentes parámetros para luego enviarlos por la red, con el fin lo lograr comprender como se conforman y comportan estos según sus características. Esto es posible gracias a un programa llamado 'Scapy' que nos da esas funcionalidades. 
+
+Los paquetes, en este experimento, varían principalmente en la dirección MAC, lo que hace que sean recibidos por distintos equipos. Para esto se ocupa 'Wireshark', programa con el que se puede capturar los paquetes enviados por la red.  Una vez creados y enviados los paquetes a través del Switch, se repite el procedimiento, sólo que esta vez los equipos están conectados a un Hub. 
+
+%Ahi modifique un poco la mierda, pero falta agregar. atte: Manuel
 
 
 \chapter{Contenido}
 
 \section{Creación de Paquetes}
-Para crear un paquete con scapy, primero se tiene que ejecutar este a través de la consola con el comando "sudo scapy". Luego se crean, según las capas  del modelo OSI, las partes del paquete (no es necesario que se creen en orden). El comando Ether() se basa en la capa 2, IP() en la capa 3,ICMP() en la capa 4 y Raw() en un payload para OSI. Luego, para juntar todo en un solo paquete, se debe apilar todo lo creado anteriormente separados por un "/". En este punto si es importante que los paquetes estén en orden según capa. Finalmente, para enviar el paquete, utilizamos el comando sendp().
-  
+Para crear un paquete con Scapy, este se tiene que ejecutar vía la consola el siguiente comando:
+%Alguna forma bonita de mostrar el comando - Manuel
+\\
+
+
+Este comando iniciara el programa donde se podrá usar sus funciones para la creación de los paquetes. Estos se crean en base a las capas del modelo OSI, sin necesidad de seguir un orden especifico al crear las capas, las cuales el programa permite su uso desde la Capa 2 hasta la que se necesite para el paquete.
+
+Iniciando con la Capa 2 esta el comando Ether(), este comando permite modificar los parámetros del enlace de datos, en especial las MACs de destino y origen, en este laboratorio se utiliza en demasía esta capa.
+
+%Imagen de los parametros del comando? - Manuel
+
+El siguiente comando, el cual se encarga de la Capa 3, es IP() el cual se encarga de los parámetros de enrutamiento incluyendo protocolos y direcciones lógicas del sistema, las direcciones de IP de origen y destino.
+
+%Imagen de los parametros del comando? - Manuel
+
+%no se que mierda poner para ICMP() - Manuel
+
+%[...] = alguna forma de continuacion del parrafo anterior
+[...] ultimo comando a usar, el cual se encarga de la información a enviar, es Raw() este se tiene un String como parámetro para el envío de información a ser usada por el equipo de destino.
+%Imagen de los parametros del comando? - Manuel
+\\
+
+Una vez creado las capas a usar, con las capas que se estimen convenientes, estas son apiladas en orden ascendente separadas con un '/' para que estas formen un solo paquete que luego puede ser enviado, para el envío del paquete se utiliza el comando sendp() %el cual hace el envio??? - Manuel
+
+%Agregen mucha mierda! - Manuel
+
+\newpage
+
 \section{Switch}
 
 \subsection{Envío de un paquete de datos a FF:FF:FF:FF:FF:FF}
@@ -50,7 +79,9 @@ Para crear un paquete con scapy, primero se tiene que ejecutar este a través de
 
 \subsection{Envió de un paquete de datos con una MAC fuera de la red}
 
-\section{HUB}
+\newpage
+
+\section{Hub}
 
 \subsection{Envío de un paquete de datos a FF:FF:FF:FF:FF:FF}
 
@@ -58,9 +89,18 @@ Para crear un paquete con scapy, primero se tiene que ejecutar este a través de
 
 \subsection{Envió de un paquete de datos con una MAC fuera de la red}
 
+\newpage
+
+\section{Cuestionario}
+
+\subsection{¿Qué pasa cuando envió un paquete a la dirección 'FF:FF:FF:FF:FF:FF'?. ¿Quienes lo reciben?. ¿Por qué?.}
+
+\subsection{¿Qué pasa cuando envió un paquete a una MAC de otro equipo?. ¿Quieres lo pueden reciben?. ¿Por qué?.}
+
+\subsection{¿Qué sucede si envía un paquete a una MAC que no corresponda a ningún equipo de la red?. ¿Quienes lo pueden recepcionar?. ¿Por qué?.}
 
 \chapter{Conclusión}
 
-A partir de la creación de paquetes de datos logramos comprender.....
+%A partir de la creación de paquetes de datos logramos comprender.....
 
 \end{document}

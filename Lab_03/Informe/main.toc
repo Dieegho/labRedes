@@ -3,12 +3,16 @@
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{2}
 \contentsline {chapter}{\numberline {2}Contenido}{3}
 \contentsline {section}{\numberline {2.1}Creaci\IeC {\'o}n de Paquetes}{3}
-\contentsline {section}{\numberline {2.2}Switch}{3}
-\contentsline {subsection}{\numberline {2.2.1}Env\IeC {\'\i }o de un paquete de datos a FF:FF:FF:FF:FF:FF}{3}
-\contentsline {subsection}{\numberline {2.2.2}Env\IeC {\'\i }o de un paquete de datos con MAC especifica}{3}
-\contentsline {subsection}{\numberline {2.2.3}Envi\IeC {\'o} de un paquete de datos con una MAC fuera de la red}{3}
-\contentsline {section}{\numberline {2.3}HUB}{3}
-\contentsline {subsection}{\numberline {2.3.1}Env\IeC {\'\i }o de un paquete de datos a FF:FF:FF:FF:FF:FF}{3}
-\contentsline {subsection}{\numberline {2.3.2}Env\IeC {\'\i }o de un paquete de datos con MAC especifica}{3}
-\contentsline {subsection}{\numberline {2.3.3}Envi\IeC {\'o} de un paquete de datos con una MAC fuera de la red}{3}
-\contentsline {chapter}{\numberline {3}Conclusi\IeC {\'o}n}{4}
+\contentsline {section}{\numberline {2.2}Switch}{4}
+\contentsline {subsection}{\numberline {2.2.1}Env\IeC {\'\i }o de un paquete de datos a FF:FF:FF:FF:FF:FF}{4}
+\contentsline {subsection}{\numberline {2.2.2}Env\IeC {\'\i }o de un paquete de datos con MAC especifica}{4}
+\contentsline {subsection}{\numberline {2.2.3}Envi\IeC {\'o} de un paquete de datos con una MAC fuera de la red}{4}
+\contentsline {section}{\numberline {2.3}Hub}{5}
+\contentsline {subsection}{\numberline {2.3.1}Env\IeC {\'\i }o de un paquete de datos a FF:FF:FF:FF:FF:FF}{5}
+\contentsline {subsection}{\numberline {2.3.2}Env\IeC {\'\i }o de un paquete de datos con MAC especifica}{5}
+\contentsline {subsection}{\numberline {2.3.3}Envi\IeC {\'o} de un paquete de datos con una MAC fuera de la red}{5}
+\contentsline {section}{\numberline {2.4}Cuestionario}{6}
+\contentsline {subsection}{\numberline {2.4.1}\IeC {\textquestiondown }Qu\IeC {\'e} pasa cuando envi\IeC {\'o} un paquete a la direcci\IeC {\'o}n 'FF:FF:FF:FF:FF:FF'?. \IeC {\textquestiondown }Quienes lo reciben?. \IeC {\textquestiondown }Por qu\IeC {\'e}?.}{6}
+\contentsline {subsection}{\numberline {2.4.2}\IeC {\textquestiondown }Qu\IeC {\'e} pasa cuando envi\IeC {\'o} un paquete a una MAC de otro equipo?. \IeC {\textquestiondown }Quieres lo pueden reciben?. \IeC {\textquestiondown }Por qu\IeC {\'e}?.}{6}
+\contentsline {subsection}{\numberline {2.4.3}\IeC {\textquestiondown }Qu\IeC {\'e} sucede si env\IeC {\'\i }a un paquete a una MAC que no corresponda a ning\IeC {\'u}n equipo de la red?. \IeC {\textquestiondown }Quienes lo pueden recepcionar?. \IeC {\textquestiondown }Por qu\IeC {\'e}?.}{6}
+\contentsline {chapter}{\numberline {3}Conclusi\IeC {\'o}n}{7}
