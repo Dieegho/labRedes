@@ -33,7 +33,7 @@
 %corrijan mi caca
 %recuerden que siempre se habla en tercera persona
 %saludos
-Este laboratorio consistió en crear paquetes de datos con diferentes parámetros para luego enviarlos por la red, con el fin de lograr comprender como se conforman y comportan estos según sus características. Esto es posible gracias a un programa llamado 'Scapy' que nos da esas funcionalidades. 
+Este laboratorio consistió en crear paquetes de datos con diferentes parámetros para luego enviarlos por la red, con el fin lo lograr comprender como se conforman y comportan estos según sus características. Esto es posible gracias a un programa llamado 'Scapy' que nos da esas funcionalidades. 
 
 Los paquetes, en este experimento, varían principalmente en la dirección MAC, lo que hace que sean recibidos por distintos equipos. Para esto se ocupa 'Wireshark', programa con el que se puede capturar los paquetes enviados por la red.  Una vez creados y enviados los paquetes a través del Switch, se repite el procedimiento, sólo que esta vez los equipos están conectados a un Hub. 
 
@@ -44,11 +44,8 @@ Los paquetes, en este experimento, varían principalmente en la dirección MAC, 
 
 \section{Creación de Paquetes}
 Para crear un paquete con Scapy, este se tiene que ejecutar vía la consola el siguiente comando:
-
-	\begin{quote}
-		\centering\texttt{sudo Scapy}
-	\end{quote}
 %Alguna forma bonita de mostrar el comando - Manuel
+\\
 
 
 Este comando iniciara el programa donde se podrá usar sus funciones para la creación de los paquetes. Estos se crean en base a las capas del modelo OSI, sin necesidad de seguir un orden especifico al crear las capas, las cuales el programa permite su uso desde la Capa 2 hasta la que se necesite para el paquete.
@@ -117,8 +114,11 @@ Luego buscamos nuestro paquete en Wireshark para ver si se envio correctamente y
 \subsection{Envió de un paquete de datos con una MAC fuera de la red}
 %la MAC es 78-E4-00-BB-23-23
 %después revisen si la mac que aparece en el informe y en la imagen es la misma, si por alguna razón misteriosa del universo o por la gracia del gran unicornio rosa invisible es otra, cambienla  - diego
-En esta tercera actividad se envía un paquete de datos a un equipo que está fuera de la red. Nuevamente no es necesario especificar otros datos que no sean la MAC en el paquete, la que corresponde en este caso a "78:E4:00:BB:23:23".
+
+En esta ocasión se utilizo una dirección MAC de destino escrita al azar que no coincidiera con la de ninguno de los equipos pertenecientes a la red LAN, esta dirección fue ’78:e4:00:bb:23:23’. Luego se creó un paquete tras haber agregado un mensaje en la última capa, sin ningún cambio adicional el paquete fue enviado a la dirección ya mencionada.
+
 %agregar basura explicatoria, tengo paja y solo agregare las imagenes -Manuel
+
 \begin{center}
 	\includegraphics[scale=.37]{imagenes/Switch/Test_3.png}
 \end{center}
@@ -131,8 +131,10 @@ En esta tercera actividad se envía un paquete de datos a un equipo que está fu
 
 \newpage
 
-\section{Hub}
+
 %señor mantinetti suba las fotos al hub, no sea hueon - diego y manuel <3
+\section{Hub}
+
 \subsection{Envío de un paquete de datos a FF:FF:FF:FF:FF:FF}
 
 \subsection{Envío de un paquete de datos con MAC especifica}
