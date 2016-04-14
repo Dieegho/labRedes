@@ -1,4 +1,4 @@
-﻿\documentclass[spanish]{udpreport}
+\documentclass[spanish]{udpreport}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 
@@ -104,24 +104,35 @@ Al no necesitar ningún parámetro extra en las capas superiores solo las defini
 	\includegraphics[scale=.37]{imagenes/Switch/Test_1b.png}
 \end{center}
 
+\pagebreak
+
 \subsection{Switch}
 
 Al ser la direccion MAC 'FF:FF:FF:FF:FF:FF' el switch no reenvía el paquete a ningún equipo que se encuentre dentro de la red. Adicionalmente a esto si estamos usando Wireshark en modo Promiscuo podemos capturar el paquete se a enviado.
 
+\begin{center}
+	\includegraphics[scale=.21]{imagenes/Switch/FF.png}
+	\\ Wireshark corriendo en Modo Promiscuo
+\end{center}
 
-%No hay imagen de wireshark del experimento 1 ... - Manuel
 
-% Al ser la dirección MAC 'FF:FF:FF:FF:FF:FF' la dirección de Broadcast el paquete es enviado a todos los equipos dentro de la red... %Creo que va en cuestionario esta wea...
-
-%agregar mierda Manuel
 
 \subsection{Hub}
 
+El hub reenvía el paquete a todos los equipos conectados a este. Pudiendo capturar este de cualquier equipo dentro de la red sin la necesidad de correr Wireshark en modo Promiscuo, debido a que les llega a todos los equipos dentro de esta.
+
+\begin{center}
+	\includegraphics[scale=.3]{imagenes/Hub/FF.jpg}
+\end{center}
+
+
 \section{Envío de un paquete de datos con MAC especifica}
+
+Para este segundo experimento, esta vez usamos una dirección MAC que pertenece a un equipo dentro de la red LAN, al igual que en el experimento anterior no necesitamos usar parámetros adicionales de las capas superiores a excepción de la ultima capa que la usamos para identificar fácilmente nuestro paquete.
+
 \subsection{Switch}
 
-Para este segundo experimento, esta vez usamos la siguiente dirección MAC '18:A9:05:1F:E2:5B' que pertenece a un equipo dentro de la red LAN, al igual que en el experimento anterior no necesitamos usar parámetros adicionales de las capas superiores a excepción de la ultima capa que la usamos para identificar fácilmente nuestro paquete.
-
+Para este experimento, esta vez usamos la siguiente dirección MAC '18:A9:05:1F:E2:5B'.
 \begin{center}
 	\includegraphics[scale=.37]{imagenes/Switch/Test_2.png}
 \end{center}
@@ -132,27 +143,45 @@ Luego buscamos nuestro paquete en Wireshark para ver si se envio correctamente y
 	\includegraphics[scale=.37]{imagenes/Switch/Test_2_Wireshark.png}
 \end{center}
 
+\pagebreak
+
 \subsection{Hub}
 
+Para el experimento con el Hub utilizamos la dirección MAC 'A8:B3:CC:4E:DE:08'
+
+\begin{center}
+	\includegraphics[scale=.27]{imagenes/Hub/sendmanti.png}
+	\\
+\end{center}
+
+Luego buscamos nuestro paquete en Wireshark para ver si se envío correctamente y llego a destino.\\
+
+\begin{center}
+	\includegraphics[scale=.27]{imagenes/Hub/ipmanti.png}
+\end{center}
+
+Confirmando que el paquete llego a destino como debería.
+
+\pagebreak
+
 \section{Envió de un paquete de datos con una MAC fuera de la red}
+
+En esta ocasión se utilizo una dirección MAC de destino escrita al azar que no coincidiera con la de ninguno de los equipos pertenecientes a la red LAN. Luego se creó un paquete tras haber agregado un mensaje en la última capa, sin ningún cambio adicional el paquete fue enviado a la dirección ya mencionada.
+
+
 \subsection{Switch}
-%la MAC es 78-E4-00-BB-23-23
-%después revisen si la mac que aparece en el informe y en la imagen es la misma, si por alguna razón misteriosa del universo o por la gracia del gran unicornio rosa invisible es otra, cambienla  - diego
 
-En esta ocasión se utilizo una dirección MAC de destino escrita al azar que no coincidiera con la de ninguno de los equipos pertenecientes a la red LAN, esta dirección fue ’78:e4:00:bb:23:23’. Luego se creó un paquete tras haber agregado un mensaje en la última capa, sin ningún cambio adicional el paquete fue enviado a la dirección ya mencionada.
-
-En esta ocasión se utilizo una dirección Mac de destino escrita al azar que no coincidiera con la de ninguno de los equipos pertenecientes a la red LAN, esta dirección fue ’78:e4:00:bb:23:23’. Luego se creó un paquete tras haber agregado un mensaje en la última capa, sin ningún cambio adicional el paquete fue enviado a la dirección ya mencionada.
-
-%agregar basura explicatoria, tengo paja y solo agregare las imagenes -Manuel
+La dirección MAC elegida fuera de la red para enviar el paquete fue '78:e4:00:bb:23:23'
 
 \begin{center}
 	\includegraphics[scale=.37]{imagenes/Switch/Test_3.png}
 \end{center}
 
-
+Descubrimos que el paquete no era recibido por ninguno de los equipos.
 
 \begin{center}
-	\includegraphics[scale=.37]{imagenes/Switch/Test_3_Wireshark.png}
+	\includegraphics[scale=.27]{imagenes/Switch/Test_3_Wireshark.png}
+	\\ Wireshark corriendo en modo Promiscuo para comprobar el envio del paquete
 \end{center}
 
 \newpage
@@ -160,16 +189,18 @@ En esta ocasión se utilizo una dirección Mac de destino escrita al azar que no
 
 \subsection{Hub}
 
+La dirección MAC elegida fuera de la red para enviar el paquete fue 'AA:BB:CC:4E:DE:08'
 
+\begin{center}
+	\includegraphics[scale=.27]{imagenes/Hub/consoleout.png}
+\end{center}
 
-%Sigo pensando que es mejor que la dejemos en una seccion que consolide las deferencias entre HUB y Switch... - Manuel
-% >Agregarlas en las secciones correspondientes -Manuel
-%\section{Cuestionario}
-%\subsection{¿Qué pasa cuando envió un paquete a la dirección 'FF:FF:FF:FF:FF:FF'?. ¿Quienes lo reciben?. ¿Por qué?}.
+Este paquete era recibido por todos los equipos conectados al Hub
 
-%\subsection{¿Qué pasa cuando envió un paquete a una MAC de otro equipo?. ¿Quieres lo pueden reciben?. ¿Por qué?.}
-
-%\subsection{¿Qué sucede si envía un paquete a una MAC que no corresponda a ningún equipo de la red?. ¿Quienes lo pueden recepcionar?. ¿Por qué?.}
+\begin{center}
+	\includegraphics[scale=.27]{imagenes/Hub/wireout.png}
+	\\ Wireshark corriendo normalmente 
+\end{center}
 
 \chapter{Conclusión}
 

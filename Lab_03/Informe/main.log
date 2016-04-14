@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.29)  13 APR 2016 23:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.29)  14 APR 2016 00:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -811,8 +811,8 @@ File: imagenes/Switch/Test_1b.png Graphic file (type png)
 <use imagenes/Switch/Test_1b.png>
 Package pdftex.def Info: imagenes/Switch/Test_1b.png used on input line 104.
 (pdftex.def)             Requested size: 269.99449pt x 167.86452pt.
-LaTeX Info: Redefining \. on input line 125.
-LaTeX Info: Redefining \% on input line 125.
+LaTeX Info: Redefining \. on input line 108.
+LaTeX Info: Redefining \% on input line 108.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -821,56 +821,101 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5 <./imagenes/Switch/Test_1a_b.png (PNG copy)> <./imagenes/Switch/Test_1b.png 
-(PNG copy)>] <imagenes/Switch/Test_2.png, id=37, 749.80125pt x 391.4625pt>
+(PNG copy)>] <imagenes/Switch/FF.png, id=37, 1927.2pt x 1084.05pt>
+File: imagenes/Switch/FF.png Graphic file (type png)
+
+<use imagenes/Switch/FF.png>
+Package pdftex.def Info: imagenes/Switch/FF.png used on input line 114.
+(pdftex.def)             Requested size: 404.72395pt x 227.65721pt.
+
+<imagenes/Hub/FF.jpg, id=38, 1371.1225pt x 770.88pt>
+File: imagenes/Hub/FF.jpg Graphic file (type jpg)
+ <use imagenes/Hub/FF.jpg>
+Package pdftex.def Info: imagenes/Hub/FF.jpg used on input line 125.
+(pdftex.def)             Requested size: 411.33992pt x 231.26578pt.
+LaTeX Info: Redefining \. on input line 132.
+LaTeX Info: Redefining \% on input line 132.
+
+[6 <./imagenes/Switch/FF.png> <./imagenes/Hub/FF.jpg>]
+<imagenes/Switch/Test_2.png, id=43, 749.80125pt x 391.4625pt>
 File: imagenes/Switch/Test_2.png Graphic file (type png)
 
 <use imagenes/Switch/Test_2.png>
-Package pdftex.def Info: imagenes/Switch/Test_2.png used on input line 126.
+Package pdftex.def Info: imagenes/Switch/Test_2.png used on input line 137.
 (pdftex.def)             Requested size: 277.42212pt x 144.83885pt.
 
-<imagenes/Switch/Test_2_Wireshark.png, id=38, 950.55125pt x 746.79pt>
+<imagenes/Switch/Test_2_Wireshark.png, id=44, 950.55125pt x 746.79pt>
 File: imagenes/Switch/Test_2_Wireshark.png Graphic file (type png)
 
 <use imagenes/Switch/Test_2_Wireshark.png>
 Package pdftex.def Info: imagenes/Switch/Test_2_Wireshark.png used on input lin
-e 132.
+e 143.
 (pdftex.def)             Requested size: 351.69846pt x 276.30797pt.
+LaTeX Info: Redefining \. on input line 147.
+LaTeX Info: Redefining \% on input line 147.
+ [7 <./imagenes/Switch/Test_2.png (PNG copy)> <./imagenes/Switch/Test_2_Wiresha
+rk.png (PNG copy)>]
+<imagenes/Hub/sendmanti.png, id=48, 1140.26pt x 809.0225pt>
+File: imagenes/Hub/sendmanti.png Graphic file (type png)
 
-<imagenes/Switch/Test_3.png, id=39, 747.79375pt x 652.4375pt>
+<use imagenes/Hub/sendmanti.png>
+Package pdftex.def Info: imagenes/Hub/sendmanti.png used on input line 153.
+(pdftex.def)             Requested size: 307.87431pt x 218.439pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+<imagenes/Hub/ipmanti.png, id=49, 1534.73375pt x 940.51375pt>
+File: imagenes/Hub/ipmanti.png Graphic file (type png)
+
+<use imagenes/Hub/ipmanti.png>
+Package pdftex.def Info: imagenes/Hub/ipmanti.png used on input line 160.
+(pdftex.def)             Requested size: 414.38365pt x 253.94211pt.
+LaTeX Info: Redefining \. on input line 166.
+LaTeX Info: Redefining \% on input line 166.
+ [8 <./imagenes/Hub/sendmanti.png> <./imagenes/Hub/ipmanti.png (PNG copy)>]
+<imagenes/Switch/Test_3.png, id=53, 747.79375pt x 652.4375pt>
 File: imagenes/Switch/Test_3.png Graphic file (type png)
 
 <use imagenes/Switch/Test_3.png>
-Package pdftex.def Info: imagenes/Switch/Test_3.png used on input line 147.
+Package pdftex.def Info: imagenes/Switch/Test_3.png used on input line 177.
 (pdftex.def)             Requested size: 276.67935pt x 241.39809pt.
-LaTeX Info: Redefining \. on input line 148.
-LaTeX Info: Redefining \% on input line 148.
- [6 <./imagenes/Switch/Test_2.png (PNG copy)> <./imagenes/Switch/Test_2_Wiresha
-rk.png (PNG copy)>]
-<imagenes/Switch/Test_3_Wireshark.png, id=44, 1370.11874pt x 882.29625pt>
+
+<imagenes/Switch/Test_3_Wireshark.png, id=54, 1370.11874pt x 882.29625pt>
 File: imagenes/Switch/Test_3_Wireshark.png Graphic file (type png)
 
 <use imagenes/Switch/Test_3_Wireshark.png>
 Package pdftex.def Info: imagenes/Switch/Test_3_Wireshark.png used on input lin
-e 153.
-(pdftex.def)             Requested size: 506.936pt x 326.4445pt.
+e 183.
+(pdftex.def)             Requested size: 369.93701pt x 238.22318pt.
+LaTeX Info: Redefining \. on input line 187.
+LaTeX Info: Redefining \% on input line 187.
+ [9 <./imagenes/Switch/Test_3.png (PNG copy)> <./imagenes/Switch/Test_3_Wiresha
+rk.png (PNG copy)>]
+<imagenes/Hub/consoleout.png, id=58, 1135.24126pt x 797.98125pt>
+File: imagenes/Hub/consoleout.png Graphic file (type png)
 
-Overfull \hbox (34.90477pt too wide) in paragraph at lines 153--154
- [] 
- []
+<use imagenes/Hub/consoleout.png>
+Package pdftex.def Info: imagenes/Hub/consoleout.png used on input line 195.
+(pdftex.def)             Requested size: 306.51923pt x 215.45781pt.
 
-LaTeX Info: Redefining \. on input line 156.
-LaTeX Info: Redefining \% on input line 156.
-[7 <./imagenes/Switch/Test_3.png (PNG copy)> <./imagenes/Switch/Test_3_Wireshar
-k.png (PNG copy)>]
-LaTeX Info: Redefining \. on input line 172.
-LaTeX Info: Redefining \% on input line 172.
- [8]
+<imagenes/Hub/wireout.png, id=59, 1360.08125pt x 1053.9375pt>
+File: imagenes/Hub/wireout.png Graphic file (type png)
+
+<use imagenes/Hub/wireout.png>
+Package pdftex.def Info: imagenes/Hub/wireout.png used on input line 201.
+(pdftex.def)             Requested size: 367.22685pt x 284.56693pt.
+LaTeX Info: Redefining \. on input line 205.
+LaTeX Info: Redefining \% on input line 205.
+ [10 <./imagenes/Hub/consoleout.png (PNG copy)> <./imagenes/Hub/wireout.png (PN
+G copy)>]
 Cap\'{\i }tulo 3.
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 176.
+less on input line 209.
 
-[9
+[11
 
 ] (./main.aux
 LaTeX Info: Redefining \. on input line 6.
@@ -879,10 +924,10 @@ LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 ) ) 
 Here is how much of TeX's memory you used:
- 14305 strings out of 493304
- 261077 string characters out of 6139871
- 471441 words of memory out of 5000000
- 17504 multiletter control sequences out of 15000+600000
+ 14335 strings out of 493304
+ 261822 string characters out of 6139871
+ 471440 words of memory out of 5000000
+ 17528 multiletter control sequences out of 15000+600000
  6288 words of font info for 23 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  70i,12n,62p,797b,1438s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -891,10 +936,10 @@ sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (10 pages, 5408717 bytes).
+Output written on main.pdf (12 pages, 6186939 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 
