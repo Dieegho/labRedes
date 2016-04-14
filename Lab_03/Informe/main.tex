@@ -44,7 +44,7 @@ Para crear un paquete con Scapy, este se tiene que ejecutar vía la consola el s
 	\emph{sudo scapy}
 \end{center}
 
-Este comando iniciara el programa como super-user donde se podrá usar sus funciones para la creación de los paquetes y enviarlos por la red. Estos se crean en base a las capas del modelo OSI, sin necesidad de seguir un orden especifico al crear las capas, las cuales el programa permite su uso desde la Capa 2 hasta la que se necesite para el paquete.
+Este comando iniciará el programa como super-user donde se podrá usar sus funciones para la creación de los paquetes y enviarlos por la red. Estos se crean en base a las capas del modelo OSI, sin necesidad de seguir un orden especifico al crear las capas, las cuales el programa permite su uso desde la Capa 2 hasta la que se necesite para el paquete.
 
 \begin{center}
 	\includegraphics[scale=.37]{imagenes/Scapy_Init.png}
@@ -56,17 +56,17 @@ Iniciando con la Capa 2 esta el comando Ether(), este comando permite modificar 
 El siguiente comando, el cual se encarga de la Capa 3, es IP() el cual se encarga de los parámetros de enrutamiento incluyendo protocolos y direcciones lógicas del sistema, las direcciones de IP de origen y destino.
 
 
-A continuación definimos ICMP(), o Internet Control Message Protocol, el cual es un protocolo como UDP o TCP, el cual se encarga de administrar la informacion relacionada con errores de los equipos en Red, este maneja mensajes de errores y control para los sistemas de la red, informando con ellos a la fuente original para que evite o corrija el problema detectado.
+A continuación se define ICMP(), o Internet Control Message Protocol, el cual es un protocolo como UDP o TCP, el cual se encarga de administrar la informacion relacionada con errores de los equipos en Red, este maneja mensajes de errores y control para los sistemas de la red, informando con ellos a la fuente original para que evite o corrija el problema detectado.
 
 El ultimo comando a usar, el cual se encarga de la información a enviar, es Raw() este se tiene un String como parámetro para el envío de información a ser usada por el equipo de destino.
 \\
 
-Una vez creado las capas a usar, con las capas que se estimen convenientes, estas son apiladas en orden ascendente separadas con un '/' para que estas formen un solo paquete que luego puede ser enviado, para el envío del paquete se utiliza el comando sendp(), este lo envía a través de la red hacia su destino dependiendo de como este configurado.
+Una vez creadas las capas a usar, estas son apiladas en orden ascendente separadas con un '/' para que estas formen un solo paquete que luego puede ser enviado, para el envío de este se utiliza el comando sendp(), este lo envía a través de la red hacia su destino dependiendo de como este configurado.
 
 
 \section{Hardware utilizado}
 
-Para este laboratorio debimos utilizar una red montada con un Switch, para esto fue utilizado un Catalyst 2690 fabricado por Cisco System, y una red montada con un Hub, siendo este un AdvanceStack Switching Hub-12R fabricado por Hawlett Packard.
+Para este laboratorio se utilizó una red montada con un Switch, para esto fue utilizado un Catalyst 2690 fabricado por Cisco System, y una red montada con un Hub, siendo este un AdvanceStack Switching Hub-12R fabricado por Hawlett Packard.
 
 \begin{center}
 	\includegraphics[scale=.5]{imagenes/Switch/switch.png}
@@ -81,13 +81,13 @@ Los equipos conectados al Switch para realizar las pruebas fueron los equipos de
 
 \section{Envío de un paquete de datos a FF:FF:FF:FF:FF:FF}
 
-Creamos el paquete con la dirección MAC 'FF:FF:FF:FF:FF:FF', ante eso fijamos el valor en el campo de destino, 'dst', con los valores dado por el ejercicio. El resto de los campos son innecesarios para la actividad por lo cual los dejamos por defecto.
+Se crea el paquete con la dirección MAC 'FF:FF:FF:FF:FF:FF', ante se fija el valor en el campo de destino, 'dst', con los valores dado por el ejercicio. El resto de los campos son innecesarios para la actividad por lo cual son dejados por defecto.
 
 \begin{center}
 	\includegraphics[scale=.37]{imagenes/Switch/Test_1a_b.png}
 \end{center}
 
-Al no necesitar ningún parámetro extra en las capas superiores solo las definimos, aunque estas no son necesarias para el funcionamiento del paquete . Solo modificamos el parámetro de la función Raw() para poder identificar el paquete que nosotros enviamos, una vez hecha la modificación a ese parámetro apilamos el paquete y procedemos el envío de este.
+Al no necesitar ningún parámetro extra en las capas superiores solo son definidas, aunque estas no son necesarias para el funcionamiento del paquete . Solo se modifica el parámetro de la función Raw() para poder identificar el paquete enviado, una vez hecha la modificación a ese parámetro apilamos el paquete y procedemos el envío de este.
 
 \begin{center}
 	\includegraphics[scale=.37]{imagenes/Switch/Test_1b.png}
@@ -97,7 +97,7 @@ Al no necesitar ningún parámetro extra en las capas superiores solo las defini
 
 \subsection{Switch}
 
-Al ser la dirección MAC 'FF:FF:FF:FF:FF:FF' el Switch no reenvía el paquete a ningún equipo que se encuentre dentro de la red. Adicionalmente a esto si estamos usando Wireshark en modo Promiscuo podemos capturar el paquete se a enviado.
+Al ser la dirección MAC 'FF:FF:FF:FF:FF:FF' el Switch no reenvía el paquete a ningún equipo que se encuentre dentro de la red. Adicionalmente a esto si se usaWireshark en modo Promiscuo se puede capturar el paquete que se ha enviado.
 
 \begin{center}
 	\includegraphics[scale=.21]{imagenes/Switch/FF.png}
@@ -108,7 +108,7 @@ Al ser la dirección MAC 'FF:FF:FF:FF:FF:FF' el Switch no reenvía el paquete a 
 
 \subsection{Hub}
 
-El Hub reenvía el paquete a todos los equipos conectados a este. Pudiendo capturar este de cualquier equipo dentro de la red sin la necesidad de correr Wireshark en modo Promiscuo, debido a que les llega a todos los equipos dentro de esta.
+El Hub reenvía el paquete a todos los equipos conectados a este. Siendo posible capturarlo de cualquier equipo dentro de la red sin la necesidad de correr Wireshark en modo Promiscuo, debido a que les llega a todos los equipos dentro de esta.
 
 \begin{center}
 	\includegraphics[scale=.3]{imagenes/Hub/FF.jpg}
@@ -117,16 +117,16 @@ El Hub reenvía el paquete a todos los equipos conectados a este. Pudiendo captu
 
 \section{Envío de un paquete de datos con MAC especifica}
 
-Para este segundo experimento, esta vez usamos una dirección MAC que pertenece a un equipo dentro de la red LAN, al igual que en el experimento anterior no necesitamos usar parámetros adicionales de las capas superiores a excepción de la ultima capa que la usamos para identificar fácilmente nuestro paquete.
+Para este segundo experimento, esta vez se usa una dirección MAC que pertenece a un equipo dentro de la red LAN, al igual que en el experimento anterior no es necesario usar parámetros adicionales de las capas superiores a excepción de la ultima capa que fue usada para identificar fácilmente nuestro paquete.
 
 \subsection{Switch}
 
-Para este experimento, esta vez usamos la siguiente dirección MAC '18:A9:05:1F:E2:5B'.
+Para este experimento, esta vez se utilizó la siguiente dirección MAC '18:A9:05:1F:E2:5B'.
 \begin{center}
 	\includegraphics[scale=.37]{imagenes/Switch/Test_2.png}
 \end{center}
 
-Luego buscamos nuestro paquete en Wireshark para ver si se envió correctamente y llego a destino.
+Luego se busca en paquete en Wireshark para ver si se envió correctamente y llego a destino.
 
 \begin{center}
 	\includegraphics[scale=.37]{imagenes/Switch/Test_2_Wireshark.png}
@@ -136,14 +136,14 @@ Luego buscamos nuestro paquete en Wireshark para ver si se envió correctamente 
 
 \subsection{Hub}
 
-Para el experimento con el Hub utilizamos la dirección MAC 'A8:B3:CC:4E:DE:08'
+Para el experimento con el Hub se utiliza la dirección MAC 'A8:B3:CC:4E:DE:08'
 
 \begin{center}
 	\includegraphics[scale=.27]{imagenes/Hub/sendmanti.png}
 	\\
 \end{center}
 
-Luego buscamos nuestro paquete en Wireshark para ver si se envío correctamente y llego a destino.\\
+Luego se busca el paquete en Wireshark para ver si se envió correctamente y llegó a destino.\\
 
 \begin{center}
 	\includegraphics[scale=.27]{imagenes/Hub/ipmanti.png}
@@ -166,7 +166,7 @@ La dirección MAC elegida fuera de la red para enviar el paquete fue '78:E4:00:B
 	\includegraphics[scale=.37]{imagenes/Switch/Test_3.png}
 \end{center}
 
-Descubrimos que el paquete no era recibido por ninguno de los equipos.
+Se descubrió que el paquete no era recibido por ninguno de los equipos.
 
 \begin{center}
 	\includegraphics[scale=.27]{imagenes/Switch/Test_3_Wireshark.png}
@@ -192,7 +192,7 @@ Este paquete era recibido por todos los equipos conectados al Hub
 \end{center}
 
 \chapter{Conclusión}
-
+Se puede observar que el hub envía todos los paquetes a todos los equipos conectados a la red, mientras que el switch los  envía según la MAC del equipo o la dirección IP. Debido a esto, se concluye que el este es más seguro que el primero a la hora de enviar paquetes por la red.
 %A partir de la creación de paquetes de datos logramos comprender.....
 
 \end{document}
