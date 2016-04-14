@@ -49,7 +49,7 @@ Para crear un paquete con Scapy, este se tiene que ejecutar vía la consola el s
 	\emph{sudo scapy}
 \end{center}
 
-Este comando iniciara el programa como super-user donde se podrá usar sus funciones para la creación de los paquetes. Estos se crean en base a las capas del modelo OSI, sin necesidad de seguir un orden especifico al crear las capas, las cuales el programa permite su uso desde la Capa 2 hasta la que se necesite para el paquete.
+Este comando iniciara el programa como super-user donde se podrá usar sus funciones para la creación de los paquetes y enviarlos por la red. Estos se crean en base a las capas del modelo OSI, sin necesidad de seguir un orden especifico al crear las capas, las cuales el programa permite su uso desde la Capa 2 hasta la que se necesite para el paquete.
 
 \begin{center}
 	\includegraphics[scale=.37]{imagenes/Scapy_Init.png}
@@ -74,6 +74,18 @@ Una vez creado las capas a usar, con las capas que se estimen convenientes, esta
 
 %Agregen mucha mierda! - Manuel
 
+\section{Hardware utilizado}
+
+Para este laboratorio debimos utilizar una red montada con un switch, para esto fue utilizado un Catalyst 2690 fabricado por Cisco System, y una red montada con un hub, siendo este un AdvanceStack Switching Hub-12R fabricado por Hawlett Packard.
+
+\begin{center}
+	\includegraphics[scale=.5]{imagenes/Switch/switch.png}
+	\includegraphics[scale=.08]{imagenes/Hub/Hub.png}
+	\linebreak
+\end{center}
+
+Los equipos conectados al switch para realizar las pruebas fueron los equipos del laboratorio de Informatica, mientras que los equipos que fueron utilizados para realizar las pruebas con el hub fueron notebooks.
+
 \newpage
 
 
@@ -94,7 +106,7 @@ Al no necesitar ningún parámetro extra en las capas superiores solo las defini
 
 \subsection{Switch}
 
-Al ser la direccion MAC 'FF:FF:FF:FF:FF:FF' el switch no reenvia el paquete a ningun equipo que se encuentre dentro de la red, si estamos usando Wireshark en modo Promiscuo podemos ver que el paquete se a enviado.
+Al ser la direccion MAC 'FF:FF:FF:FF:FF:FF' el switch no reenvía el paquete a ningún equipo que se encuentre dentro de la red. Adicionalmente a esto si estamos usando Wireshark en modo Promiscuo podemos capturar el paquete se a enviado.
 
 
 %No hay imagen de wireshark del experimento 1 ... - Manuel
@@ -108,7 +120,7 @@ Al ser la direccion MAC 'FF:FF:FF:FF:FF:FF' el switch no reenvia el paquete a ni
 \section{Envío de un paquete de datos con MAC especifica}
 \subsection{Switch}
 
-Para este segundo experimento, esta vez usamos la siguiente dirección MAC '18:a9:05:1f:e2:5b' que pertenece a un equipo dentro de la red LAN, al igual que en el experimento anterior no necesitamos usar parametros adicionales de las capas superiores a excepción de la ultima capa que la usamos para identificar facilmente nuestro paquete.
+Para este segundo experimento, esta vez usamos la siguiente dirección MAC '18:A9:05:1F:E2:5B' que pertenece a un equipo dentro de la red LAN, al igual que en el experimento anterior no necesitamos usar parámetros adicionales de las capas superiores a excepción de la ultima capa que la usamos para identificar fácilmente nuestro paquete.
 
 \begin{center}
 	\includegraphics[scale=.37]{imagenes/Switch/Test_2.png}
