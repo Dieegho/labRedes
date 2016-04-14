@@ -78,9 +78,9 @@ Una vez creado las capas a usar, con las capas que se estimen convenientes, esta
 
 \newpage
 
-\section{Switch}
 
-\subsection{Envío de un paquete de datos a FF:FF:FF:FF:FF:FF}
+\section{Envío de un paquete de datos a FF:FF:FF:FF:FF:FF}
+
 %escribire en primera persona porque me da paja hacerlo en tercera - Manuel
 Creamos el paquete con la dirección MAC 'FF:FF:FF:FF:FF:FF' ...
 
@@ -92,7 +92,12 @@ Al no necesitar ningún parámetro extra en las capas superiores solo las defini
 
 \begin{center}
 	\includegraphics[scale=.37]{imagenes/Switch/Test_1b.png}
-\end{center} 
+\end{center}
+
+\subsection{Switch}
+
+Al ser la direccion MAC 'FF:FF:FF:FF:FF:FF' el switch no reenvia el paquete a ningun equipo que se encuentre dentro de la red, si estamos usando Wireshark en modo Promiscuo podemos ver que el paquete se a enviado.
+
 
 %No hay imagen de wireshark del experimento 1 ... - Manuel
 
@@ -100,7 +105,10 @@ Al no necesitar ningún parámetro extra en las capas superiores solo las defini
 
 %agregar mierda Manuel
 
-\subsection{Envío de un paquete de datos con MAC especifica}
+\subsection{Hub}
+
+\section{Envío de un paquete de datos con MAC especifica}
+\subsection{Switch}
 
 Para este segundo experimento, esta vez usamos la siguiente dirección MAC '18:a9:05:1f:e2:5b' que pertenece a un equipo dentro de la red LAN, al igual que en el experimento anterior no necesitamos usar parametros adicionales de las capas superiores a excepción de la ultima capa que la usamos para identificar facilmente nuestro paquete.
 
@@ -114,7 +122,10 @@ Luego buscamos nuestro paquete en Wireshark para ver si se envio correctamente y
 	\includegraphics[scale=.37]{imagenes/Switch/Test_2_Wireshark.png}
 \end{center}
 
-\subsection{Envió de un paquete de datos con una MAC fuera de la red}
+\subsection{Hub}
+
+\section{Envió de un paquete de datos con una MAC fuera de la red}
+\subsection{Switch}
 %la MAC es 78-E4-00-BB-23-23
 %después revisen si la mac que aparece en el informe y en la imagen es la misma, si por alguna razón misteriosa del universo o por la gracia del gran unicornio rosa invisible es otra, cambienla  - diego
 En esta tercera actividad se envía un paquete de datos a un equipo que está fuera de la red. Nuevamente no es necesario especificar otros datos que no sean la MAC en el paquete, la que corresponde en este caso a "78:E4:00:BB:23:23".
@@ -131,13 +142,7 @@ En esta tercera actividad se envía un paquete de datos a un equipo que está fu
 
 \newpage
 
-\section{Hub}
-%señor mantinetti suba las fotos al hub, no sea hueon - diego y manuel <3
-\subsection{Envío de un paquete de datos a FF:FF:FF:FF:FF:FF}
-
-\subsection{Envío de un paquete de datos con MAC especifica}
-
-\subsection{Envió de un paquete de datos con una MAC fuera de la red}
+\subsection{Hub}
 
 %Sigo pensando que es mejor que la dejemos en una seccion que consolide las deferencias entre HUB y Switch... - Manuel
 % >Agregarlas en las secciones correspondientes -Manuel
