@@ -14,7 +14,7 @@
 \ayudante{Ayudante \\ Maximiliano Vega}
 
 
-\date{10 de Abril de 2016} %Cambie la fecha de 8 a 10 no se si importe (?) - Manuel
+\date{14 de Abril de 2016}
 
 % Además podemos establecer la facultad y escuela
 % los valores por defecto son los siguientes:
@@ -76,7 +76,7 @@ Una vez creado las capas a usar, con las capas que se estimen convenientes, esta
 
 \section{Hardware utilizado}
 
-Para este laboratorio debimos utilizar una red montada con un switch, para esto fue utilizado un Catalyst 2690 fabricado por Cisco System, y una red montada con un hub, siendo este un AdvanceStack Switching Hub-12R fabricado por Hawlett Packard.
+Para este laboratorio debimos utilizar una red montada con un Switch, para esto fue utilizado un Catalyst 2690 fabricado por Cisco System, y una red montada con un Hub, siendo este un AdvanceStack Switching Hub-12R fabricado por Hawlett Packard.
 
 \begin{center}
 	\includegraphics[scale=.5]{imagenes/Switch/switch.png}
@@ -84,21 +84,20 @@ Para este laboratorio debimos utilizar una red montada con un switch, para esto 
 	\linebreak
 \end{center}
 
-Los equipos conectados al switch para realizar las pruebas fueron los equipos del laboratorio de Informatica, mientras que los equipos que fueron utilizados para realizar las pruebas con el hub fueron notebooks.
+Los equipos conectados al Switch para realizar las pruebas fueron los equipos del laboratorio de Informática, mientras que los equipos que fueron utilizados para realizar las pruebas con el Hub fueron notebooks.
 
 \newpage
 
 
 \section{Envío de un paquete de datos a FF:FF:FF:FF:FF:FF}
 
-%escribire en primera persona porque me da paja hacerlo en tercera - Manuel
-Creamos el paquete con la dirección MAC 'FF:FF:FF:FF:FF:FF' ...
+Creamos el paquete con la dirección MAC 'FF:FF:FF:FF:FF:FF', ante eso fijamos el valor en el campo de destino, 'dst', con los valores dado por el ejercicio. El resto de los campos son innecesarios para la actividad por lo cual los dejamos por defecto.
 
 \begin{center}
 	\includegraphics[scale=.37]{imagenes/Switch/Test_1a_b.png}
 \end{center}
 
-Al no necesitar ningún parámetro extra en las capas superiores solo las definimos/instanciamos , aunque esto no es necesario para el funcionamiento del paquete (?). Solo modificamos el parámetro de la función Raw() para poder identificar el paquete que nosotros enviamos, una vez hecha la modificación a ese parámetro apilamos el paquete y procedemos el envío de este.
+Al no necesitar ningún parámetro extra en las capas superiores solo las definimos, aunque esto no son necesarias para el funcionamiento del paquete . Solo modificamos el parámetro de la función Raw() para poder identificar el paquete que nosotros enviamos, una vez hecha la modificación a ese parámetro apilamos el paquete y procedemos el envío de este.
 
 \begin{center}
 	\includegraphics[scale=.37]{imagenes/Switch/Test_1b.png}
@@ -108,7 +107,7 @@ Al no necesitar ningún parámetro extra en las capas superiores solo las defini
 
 \subsection{Switch}
 
-Al ser la direccion MAC 'FF:FF:FF:FF:FF:FF' el switch no reenvía el paquete a ningún equipo que se encuentre dentro de la red. Adicionalmente a esto si estamos usando Wireshark en modo Promiscuo podemos capturar el paquete se a enviado.
+Al ser la dirección MAC 'FF:FF:FF:FF:FF:FF' el Switch no reenvía el paquete a ningún equipo que se encuentre dentro de la red. Adicionalmente a esto si estamos usando Wireshark en modo Promiscuo podemos capturar el paquete se a enviado.
 
 \begin{center}
 	\includegraphics[scale=.21]{imagenes/Switch/FF.png}
@@ -119,7 +118,7 @@ Al ser la direccion MAC 'FF:FF:FF:FF:FF:FF' el switch no reenvía el paquete a n
 
 \subsection{Hub}
 
-El hub reenvía el paquete a todos los equipos conectados a este. Pudiendo capturar este de cualquier equipo dentro de la red sin la necesidad de correr Wireshark en modo Promiscuo, debido a que les llega a todos los equipos dentro de esta.
+El Hub reenvía el paquete a todos los equipos conectados a este. Pudiendo capturar este de cualquier equipo dentro de la red sin la necesidad de correr Wireshark en modo Promiscuo, debido a que les llega a todos los equipos dentro de esta.
 
 \begin{center}
 	\includegraphics[scale=.3]{imagenes/Hub/FF.jpg}
@@ -137,7 +136,7 @@ Para este experimento, esta vez usamos la siguiente dirección MAC '18:A9:05:1F:
 	\includegraphics[scale=.37]{imagenes/Switch/Test_2.png}
 \end{center}
 
-Luego buscamos nuestro paquete en Wireshark para ver si se envio correctamente y llego a destino.
+Luego buscamos nuestro paquete en Wireshark para ver si se envió correctamente y llego a destino.
 
 \begin{center}
 	\includegraphics[scale=.37]{imagenes/Switch/Test_2_Wireshark.png}
@@ -171,7 +170,7 @@ En esta ocasión se utilizo una dirección MAC de destino escrita al azar que no
 
 \subsection{Switch}
 
-La dirección MAC elegida fuera de la red para enviar el paquete fue '78:e4:00:bb:23:23'
+La dirección MAC elegida fuera de la red para enviar el paquete fue '78:E4:00:BB:23:23'
 
 \begin{center}
 	\includegraphics[scale=.37]{imagenes/Switch/Test_3.png}
@@ -181,7 +180,7 @@ Descubrimos que el paquete no era recibido por ninguno de los equipos.
 
 \begin{center}
 	\includegraphics[scale=.27]{imagenes/Switch/Test_3_Wireshark.png}
-	\\ Wireshark corriendo en modo Promiscuo para comprobar el envio del paquete
+	\\ Wireshark corriendo en modo Promiscuo para comprobar el envió del paquete
 \end{center}
 
 \newpage
