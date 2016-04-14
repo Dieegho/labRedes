@@ -7,20 +7,10 @@
 \contentsline {section}{\numberline {2.3}Env\IeC {\'\i }o de un paquete de datos a FF:FF:FF:FF:FF:FF}{5}
 \contentsline {subsection}{\numberline {2.3.1}Switch}{6}
 \contentsline {subsection}{\numberline {2.3.2}Hub}{6}
-<<<<<<< HEAD
-\contentsline {section}{\numberline {2.4}Env\IeC {\'\i }o de un paquete de datos con MAC especifica}{7}
-\contentsline {subsection}{\numberline {2.4.1}Switch}{7}
+\contentsline {section}{\numberline {2.4}Env\IeC {\'\i }o de un paquete de datos con MAC especifica}{6}
+\contentsline {subsection}{\numberline {2.4.1}Switch}{6}
 \contentsline {subsection}{\numberline {2.4.2}Hub}{8}
 \contentsline {section}{\numberline {2.5}Envi\IeC {\'o} de un paquete de datos con una MAC fuera de la red}{9}
 \contentsline {subsection}{\numberline {2.5.1}Switch}{9}
 \contentsline {subsection}{\numberline {2.5.2}Hub}{10}
 \contentsline {chapter}{\numberline {3}Conclusi\IeC {\'o}n}{11}
-=======
-\contentsline {section}{\numberline {2.4}Env\IeC {\'\i }o de un paquete de datos con MAC especifica}{8}
-\contentsline {subsection}{\numberline {2.4.1}Switch}{9}
-\contentsline {subsection}{\numberline {2.4.2}Hub}{9}
-\contentsline {section}{\numberline {2.5}Envi\IeC {\'o} de un paquete de datos con una MAC fuera de la red}{10}
-\contentsline {subsection}{\numberline {2.5.1}Switch}{11}
-\contentsline {subsection}{\numberline {2.5.2}Hub}{12}
-\contentsline {chapter}{\numberline {3}Conclusi\IeC {\'o}n}{13}
->>>>>>> d1d3dd8fda0548218b79daabb8e06f6d25e3cd15
