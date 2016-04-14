@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.29)  13 APR 2016 15:28
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.4.10)  13 APR 2016 19:16
+>>>>>>> 00c23826f5d84196c3e95b89a3d717f2c8ba3115
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -764,20 +768,29 @@ less on input line 43.
 
 ]
 Cap\'{\i }tulo 2.
+<<<<<<< HEAD
 <imagenes/Scapy_Init.png, id=19, 724.7075pt x 463.7325pt>
+=======
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
+
+ []
+
+<imagenes/Scapy_Init.png, id=18, 724.7075pt x 463.7325pt>
+>>>>>>> 00c23826f5d84196c3e95b89a3d717f2c8ba3115
 File: imagenes/Scapy_Init.png Graphic file (type png)
 
 <use imagenes/Scapy_Init.png>
-Package pdftex.def Info: imagenes/Scapy_Init.png used on input line 57.
+Package pdftex.def Info: imagenes/Scapy_Init.png used on input line 54.
 (pdftex.def)             Requested size: 268.13757pt x 171.57832pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
+Underfull \hbox (badness 10000) in paragraph at lines 68--71
 
  []
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 79.
+less on input line 76.
 
 [3
 
@@ -786,15 +799,16 @@ less on input line 79.
 File: imagenes/Switch/Test_1a_b.png Graphic file (type png)
 
 <use imagenes/Switch/Test_1a_b.png>
-Package pdftex.def Info: imagenes/Switch/Test_1a_b.png used on input line 88.
+Package pdftex.def Info: imagenes/Switch/Test_1a_b.png used on input line 85.
 (pdftex.def)             Requested size: 253.65369pt x 184.94807pt.
 
 <imagenes/Switch/Test_1b.png, id=26, 1027.84pt x 770.88pt>
 File: imagenes/Switch/Test_1b.png Graphic file (type png)
 
 <use imagenes/Switch/Test_1b.png>
-Package pdftex.def Info: imagenes/Switch/Test_1b.png used on input line 94.
+Package pdftex.def Info: imagenes/Switch/Test_1b.png used on input line 91.
 (pdftex.def)             Requested size: 380.29485pt x 285.22113pt.
+<<<<<<< HEAD
 LaTeX Info: Redefining \. on input line 114.
 LaTeX Info: Redefining \% on input line 114.
 
@@ -813,6 +827,20 @@ Package pdftex.def Info: imagenes/Switch/Test_2.png used on input line 116.
 (pdftex.def)             Requested size: 534.78963pt x 334.24352pt.
 
 Overfull \hbox (62.75839pt too wide) in paragraph at lines 116--117
+=======
+LaTeX Info: Redefining \. on input line 103.
+LaTeX Info: Redefining \% on input line 103.
+ [4 <./imagenes/Switch/Test_1a_b.png (PNG copy)> <./imagenes/Switch/Test_1b.png
+>]
+<imagenes/Switch/Test_2.png, id=29, 1445.4pt x 903.375pt>
+File: imagenes/Switch/Test_2.png Graphic file (type png)
+
+<use imagenes/Switch/Test_2.png>
+Package pdftex.def Info: imagenes/Switch/Test_2.png used on input line 105.
+(pdftex.def)             Requested size: 534.78963pt x 334.24352pt.
+
+Overfull \hbox (62.75839pt too wide) in paragraph at lines 105--106
+>>>>>>> 00c23826f5d84196c3e95b89a3d717f2c8ba3115
  [] 
  []
 
@@ -821,10 +849,17 @@ File: imagenes/Switch/Test_2_Wireshark.png Graphic file (type png)
 
 <use imagenes/Switch/Test_2_Wireshark.png>
 Package pdftex.def Info: imagenes/Switch/Test_2_Wireshark.png used on input lin
+<<<<<<< HEAD
 e 122.
 (pdftex.def)             Requested size: 351.69846pt x 276.30797pt.
 LaTeX Info: Redefining \. on input line 123.
 LaTeX Info: Redefining \% on input line 123.
+=======
+e 111.
+(pdftex.def)             Requested size: 380.29485pt x 285.22113pt.
+LaTeX Info: Redefining \. on input line 112.
+LaTeX Info: Redefining \% on input line 112.
+>>>>>>> 00c23826f5d84196c3e95b89a3d717f2c8ba3115
  [5 <./imagenes/Switch/Test_2.png>]
 <imagenes/Switch/Test_3.png, id=35, 1027.84pt x 770.88pt>
 File: imagenes/Switch/Test_3.png Graphic file (type png)
@@ -832,10 +867,17 @@ File: imagenes/Switch/Test_3.png Graphic file (type png)
 <use imagenes/Switch/Test_3.png>
 Package pdftex.def Info: imagenes/Switch/Test_3.png used on input line 134.
 (pdftex.def)             Requested size: 380.29485pt x 285.22113pt.
+<<<<<<< HEAD
 LaTeX Info: Redefining \. on input line 135.
 LaTeX Info: Redefining \% on input line 135.
  [6 <./imagenes/Switch/Test_2_Wireshark.png (PNG copy)>]
 <imagenes/Switch/Test_3_Wireshark.png, id=40, 1370.11874pt x 882.29625pt>
+=======
+LaTeX Info: Redefining \. on input line 124.
+LaTeX Info: Redefining \% on input line 124.
+ [6 <./imagenes/Switch/Test_2_Wireshark.png>]
+<imagenes/Switch/Test_3_Wireshark.png, id=39, 1445.4pt x 903.375pt>
+>>>>>>> 00c23826f5d84196c3e95b89a3d717f2c8ba3115
 File: imagenes/Switch/Test_3_Wireshark.png Graphic file (type png)
 
 <use imagenes/Switch/Test_3_Wireshark.png>
@@ -847,6 +889,7 @@ Overfull \hbox (34.90477pt too wide) in paragraph at lines 140--141
  [] 
  []
 
+<<<<<<< HEAD
 LaTeX Info: Redefining \. on input line 143.
 LaTeX Info: Redefining \% on input line 143.
 [7 <./imagenes/Switch/Test_3.png> <./imagenes/Switch/Test_3_Wireshark.png (PNG 
@@ -858,6 +901,19 @@ Cap\'{\i }tulo 3.
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 160.
+=======
+LaTeX Info: Redefining \. on input line 132.
+LaTeX Info: Redefining \% on input line 132.
+[7 <./imagenes/Switch/Test_3.png> <./imagenes/Switch/Test_3_Wireshark.png>]
+LaTeX Info: Redefining \. on input line 153.
+LaTeX Info: Redefining \% on input line 153.
+
+[8]
+Cap\'{\i }tulo 3.
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 157.
+>>>>>>> 00c23826f5d84196c3e95b89a3d717f2c8ba3115
 
 [9
 
@@ -868,6 +924,7 @@ LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 ) ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  14300 strings out of 493304
  260903 string characters out of 6139871
  471441 words of memory out of 5000000
@@ -880,6 +937,21 @@ sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 Output written on main.pdf (10 pages, 817951 bytes).
+=======
+ 14292 strings out of 493634
+ 279167 string characters out of 3135239
+ 477698 words of memory out of 3000000
+ 17434 multiletter control sequences out of 15000+200000
+ 5942 words of font info for 22 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 69i,11n,62p,799b,1456s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Ezaah/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmbx10.pfb><C:/Users/Ezaah/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb><C:/Users/Ezaah/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ezaah/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (10 pages, 981972 bytes).
+>>>>>>> 00c23826f5d84196c3e95b89a3d717f2c8ba3115
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream
