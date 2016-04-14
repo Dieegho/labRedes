@@ -29,22 +29,17 @@
 
 \chapter{Introducción}
 
-%metanle caca cabros atte. diego
-%corrijan mi caca
-%recuerden que siempre se habla en tercera persona
-%saludos
 Este laboratorio consistió en crear paquetes de datos con diferentes parámetros para luego enviarlos por la red, con el fin lo lograr comprender como se conforman y comportan estos según sus características. Esto es posible gracias a un programa llamado 'Scapy' que nos da esas funcionalidades. 
 
 Los paquetes, en este experimento, varían principalmente en la dirección MAC, lo que hace que sean recibidos por distintos equipos. Para esto se ocupa 'Wireshark', programa con el que se puede capturar los paquetes enviados por la red.  Una vez creados y enviados los paquetes a través del Switch, se repite el procedimiento, sólo que esta vez los equipos están conectados a un Hub. 
 
-%Ahi modifique un poco la mierda, pero falta agregar. atte: Manuel
 
 
 \chapter{Contenido}
 
 \section{Creación de Paquetes}
 Para crear un paquete con Scapy, este se tiene que ejecutar vía la consola el siguiente comando:
-%Alguna forma bonita de mostrar el comando - Manuel
+
 \begin{center}
 	\emph{sudo scapy}
 \end{center}
@@ -57,22 +52,17 @@ Este comando iniciara el programa como super-user donde se podrá usar sus funci
 
 Iniciando con la Capa 2 esta el comando Ether(), este comando permite modificar los parámetros del enlace de datos, en especial las MACs de destino y origen, en este laboratorio se utiliza en demasía esta capa.
 
-%Imagen de los parametros del comando? - Manuel
 
 El siguiente comando, el cual se encarga de la Capa 3, es IP() el cual se encarga de los parámetros de enrutamiento incluyendo protocolos y direcciones lógicas del sistema, las direcciones de IP de origen y destino.
 
-%Imagen de los parametros del comando? - Manuel
 
 A continuación definimos ICMP(), o Internet Control Message Protocol, el cual es un protocolo como UDP o TCP, el cual se encarga de administrar la informacion relacionada con errores de los equipos en Red, este maneja mensajes de errores y control para los sistemas de la red, informando con ellos a la fuente original para que evite o corrija el problema detectado.
 
-%[...] = alguna forma de continuacion del parrafo anterior
-[...] ultimo comando a usar, el cual se encarga de la información a enviar, es Raw() este se tiene un String como parámetro para el envío de información a ser usada por el equipo de destino.
-%Imagen de los parametros del comando? - Manuel
+El ultimo comando a usar, el cual se encarga de la información a enviar, es Raw() este se tiene un String como parámetro para el envío de información a ser usada por el equipo de destino.
 \\
 
-Una vez creado las capas a usar, con las capas que se estimen convenientes, estas son apiladas en orden ascendente separadas con un '/' para que estas formen un solo paquete que luego puede ser enviado, para el envío del paquete se utiliza el comando sendp() %el cual hace el envio??? - Manuel
+Una vez creado las capas a usar, con las capas que se estimen convenientes, estas son apiladas en orden ascendente separadas con un '/' para que estas formen un solo paquete que luego puede ser enviado, para el envío del paquete se utiliza el comando sendp(), este lo envía a través de la red hacia su destino dependiendo de como este configurado.
 
-%Agregen mucha mierda! - Manuel
 
 \section{Hardware utilizado}
 
@@ -97,7 +87,7 @@ Creamos el paquete con la dirección MAC 'FF:FF:FF:FF:FF:FF', ante eso fijamos e
 	\includegraphics[scale=.37]{imagenes/Switch/Test_1a_b.png}
 \end{center}
 
-Al no necesitar ningún parámetro extra en las capas superiores solo las definimos, aunque esto no son necesarias para el funcionamiento del paquete . Solo modificamos el parámetro de la función Raw() para poder identificar el paquete que nosotros enviamos, una vez hecha la modificación a ese parámetro apilamos el paquete y procedemos el envío de este.
+Al no necesitar ningún parámetro extra en las capas superiores solo las definimos, aunque estas no son necesarias para el funcionamiento del paquete . Solo modificamos el parámetro de la función Raw() para poder identificar el paquete que nosotros enviamos, una vez hecha la modificación a ese parámetro apilamos el paquete y procedemos el envío de este.
 
 \begin{center}
 	\includegraphics[scale=.37]{imagenes/Switch/Test_1b.png}
