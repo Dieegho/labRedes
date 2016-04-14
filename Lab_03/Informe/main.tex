@@ -45,10 +45,11 @@ Los paquetes, en este experimento, varían principalmente en la dirección MAC, 
 \section{Creación de Paquetes}
 Para crear un paquete con Scapy, este se tiene que ejecutar vía la consola el siguiente comando:
 %Alguna forma bonita de mostrar el comando - Manuel
-\\
+\begin{center}
+	\emph{sudo scapy}
+\end{center}
 
-
-Este comando iniciara el programa donde se podrá usar sus funciones para la creación de los paquetes. Estos se crean en base a las capas del modelo OSI, sin necesidad de seguir un orden especifico al crear las capas, las cuales el programa permite su uso desde la Capa 2 hasta la que se necesite para el paquete.
+Este comando iniciara el programa como super-user donde se podrá usar sus funciones para la creación de los paquetes. Estos se crean en base a las capas del modelo OSI, sin necesidad de seguir un orden especifico al crear las capas, las cuales el programa permite su uso desde la Capa 2 hasta la que se necesite para el paquete.
 
 \begin{center}
 	\includegraphics[scale=.37]{imagenes/Scapy_Init.png}
@@ -62,7 +63,7 @@ El siguiente comando, el cual se encarga de la Capa 3, es IP() el cual se encarg
 
 %Imagen de los parametros del comando? - Manuel
 
-%no se que mierda poner para ICMP() - Manuel
+A continuación definimos ICMP(), o Internet Control Message Protocol, el cual es un protocolo como UDP o TCP, el cual se encarga de administrar la informacion relacionada con errores de los equipos en Red, este maneja mensajes de errores y control para los sistemas de la red, informando con ellos a la fuente original para que evite o corrija el problema detectado.
 
 %[...] = alguna forma de continuacion del parrafo anterior
 [...] ultimo comando a usar, el cual se encarga de la información a enviar, es Raw() este se tiene un String como parámetro para el envío de información a ser usada por el equipo de destino.
