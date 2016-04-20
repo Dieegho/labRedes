@@ -1,0 +1,8 @@
+-Se agregan 4 equipos conectados a un switch
+
+
+rourter
+
+-configuramos las ip del rourter 192.168.0.1 y 10.0.0.1
+-agregamos las redes a la tabla de ruteo para permitir que se intercomuniquen 
+-en los equipos agregamos el gateway correspondiente al la ip del puerto del rourter conectado
