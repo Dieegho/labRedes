@@ -26,6 +26,45 @@
 \maketitle
 
 \tableofcontents
+\chapter{Actividad I}
+La primera actividad consiste en analizar los problemas producidos cuando una topología de red presenta enlaces redundantes y se generan bucles. Luego se comparan los resultados al incorporar el protocolo STP(IEE 802.1d) a los equipos de la red y se analizarán las ventajas que este ofrece a la hora de enfrentarse a la redundancia de la red.
+ %insertar pantallazo de la red
+ %si es posible rellenar con los switch  coloquenlos donde dejé un parentesis, si no borren el parentesis
+La red consiste en tres switches()  conectados entre si. Luego se envían paquetes desde el switch0 hasta el switch 2 y posteriormente desde el switch2 hasta el switch1.
+%responder preguntas aquí.
+
+
+\chapter{Actividad II}
+Considerando la topología de la actividad I, se procede a configurar el switch1 como primario y el switch2 como secundario. Para lograr esto se deben ejecutar una serie de comandos en cada switch según como se vaya a configurar.
+%poner en negrita o subtitulado o la wea que sea esto:
+Para el switch primario:
+ \begin{center}
+    Switch>Enable
+Switch#configure terminal
+Enter configuration commands, one per line. End with CNTL/
+Switch(config)#spanning-tree vlan 1 root primary
+Switch(config)#
+ \end{center}
+Para el switch secundario:
+ \being{center}
+ Switch>Enable
+Switch#configure terminal
+Enter configuration commands, one per line. End with CNTL/
+Switch(config)#spanning-tree vlan 1 root secondary
+Switch(config)#
+ \being{center}
+ %responder las preguntas de la actividad 2
+
+
+\chapter{Actividad III}
+Para esta tercera actividad, se establecerá una prioridad para cada uno de los tres switches y se analiza el comportamiento de STP en relación a esta. Para asignar una prioridad a un switch se deben ingresar estos comandos:
+\being{center}
+ Switch>Enable
+Switch#configure terminal
+Enter configuration commands, one per line. End with CNTL/
+Switch(config)#spanning-tree vlan 1 priority “NUMERO”
+Switch(config)#
+\being{center}
 
 
 \end{document}
