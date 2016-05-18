@@ -1,6 +1,8 @@
 \documentclass[spanish]{udpreport}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
+\usepackage{float}
+
 
 % Podemos establecer el logo de alguna entidad o dejar el de la UDP (defecto)
 %\setlogo{EITFI}
@@ -14,7 +16,7 @@
 \ayudante{Ayudante \\ Maximiliano Vega}
 
 
-\date{XX de Mayo de 2016}
+\date{12 de Mayo de 2016}
 
 % Además podemos establecer la facultad y escuela
 % los valores por defecto son los siguientes:
@@ -26,45 +28,104 @@
 \maketitle
 
 \tableofcontents
-\chapter{Actividad I}
+
+\chapter{Introducción}
+
+Este laboratorio consistió en armar una simulación de red en Packet Tracer con distintos equipos y configuraciones dentro de la red para comprender el funcionamiento del protocolo SPT y las VLAN.
+
+\chapter{Software utilizado}
+La aplicación que usaremos en esta ocasión para simular las distintas redes sera Packet Tracer. Este programa es propiedad de Cisco y nos permite experimentar con el comportamiento de la red y resolver preguntas de que ocurriría con la red si realizamos cierta configuración o conexión de dispositivos.
+
+\chapter{Actividades}
+
+\section{Actividad I}
 La primera actividad consiste en analizar los problemas producidos cuando una topología de red presenta enlaces redundantes y se generan bucles. Luego se comparan los resultados al incorporar el protocolo STP(IEE 802.1d) a los equipos de la red y se analizarán las ventajas que este ofrece a la hora de enfrentarse a la redundancia de la red.
  %insertar pantallazo de la red
  %si es posible rellenar con los switch  coloquenlos donde dejé un parentesis, si no borren el parentesis
 La red consiste en tres switches()  conectados entre si. Luego se envían paquetes desde el switch0 hasta el switch 2 y posteriormente desde el switch2 hasta el switch1.
 %responder preguntas aquí.
 
+En esta actividad montamos 3 switch Cisco interconectados como se muestra en la siguiente imagen 
+\begin{figure}[H]
+	\caption{Topologia Actividad I}
+	\centering
+	\includegraphics[scale=.25, bb=0 0 30 30]{imagenes/A1.png}
+	\label{fig:Figura 2.1}
+	\linebreak
+\end{figure}
 
-\chapter{Actividad II}
+\subsection{¿Qué camino realizara un paquete que para llegar desde el switch
+0 hasta el switch2?}
+
+\subsection{¿Qué camino realizara un paquete que para llegar desde el switch
+2 hasta el switch1?}
+
+
+\section{Actividad II}
 Considerando la topología de la actividad I, se procede a configurar el switch1 como primario y el switch2 como secundario. Para lograr esto se deben ejecutar una serie de comandos en cada switch según como se vaya a configurar.
 %poner en negrita o subtitulado o la wea que sea esto:
 Para el switch primario:
- \begin{center}
-    Switch>Enable
-Switch#configure terminal
-Enter configuration commands, one per line. End with CNTL/
-Switch(config)#spanning-tree vlan 1 root primary
-Switch(config)#
- \end{center}
-Para el switch secundario:
- \being{center}
- Switch>Enable
-Switch#configure terminal
-Enter configuration commands, one per line. End with CNTL/
-Switch(config)#spanning-tree vlan 1 root secondary
-Switch(config)#
- \being{center}
+% \begin{center}
+%    Switch>Enable
+%Switch#configure terminal
+%Enter configuration commands, one per line. End with CNTL/
+%Switch(config)#spanning-tree vlan 1 root primary
+%Switch(config)#
+% \end{center}
+%Para el switch secundario:
+% \being{center}
+% Switch>Enable
+%Switch#configure terminal
+%Enter configuration commands, one per line. End with CNTL/
+%Switch(config)#spanning-tree vlan 1 root secondary
+%Switch(config)#
+% \being{center}
  %responder las preguntas de la actividad 2
 
+\subsection{¿Qué camino realizara un paquete que para llegar desde el switch
+2 hasta el switch0?}
 
-\chapter{Actividad III}
+\subsection{¿Qué camino realizara un paquete que para llegar desde el switch
+1 hasta el switch0?}
+
+
+
+\section{Actividad III}
 Para esta tercera actividad, se establecerá una prioridad para cada uno de los tres switches y se analiza el comportamiento de STP en relación a esta. Para asignar una prioridad a un switch se deben ingresar estos comandos:
-\being{center}
- Switch>Enable
-Switch#configure terminal
-Enter configuration commands, one per line. End with CNTL/
-Switch(config)#spanning-tree vlan 1 priority “NUMERO”
-Switch(config)#
-\being{center}
+%\being{center}
+% Switch>Enable
+%Switch#configure terminal
+%Enter configuration commands, one per line. End with CNTL/
+%Switch(config)#spanning-tree vlan 1 priority “NUMERO”
+%Switch(config)#
+%\being{center}
+
+\section{Actividad IV}
+
+En esta actividad debemos montar una topologia de red que contiene 6 Switch y 8 equipos, configurando sus respectivas VLANs e IPs
+
+\begin{figure}[H]
+	\caption{Topologia Actividad IV}
+	\label{fig:Figura 2.4}
+	\centering
+	\includegraphics[scale=.6, bb=0 0 30 30]{imagenes/A4e.png}
+	\linebreak
+\end{figure}
+
+\subsection{¿Cuál es la diferencia del modo Access y el modo Trunk en un switch?}
+La diferencia se encuentra que en el modo Access permite el paso de una VLAN, mientras que el modo Trunk permite el paso de un conjunto de VLAN
+
+\subsection{¿Qué ocurre si conecto una puerta en modo Trunk a un PC?}
+
+\subsection{¿Qué ocurre si conecto dos switches, uno en modo access y otro en modo trunk?}
+
+\subsection{¿Qué camino realizara un paquete que para llegar desde el switch 1 hasta el
+switch 0?}
+
+Seguirá el camino de el enlace que comparten.
+
+
+\listoffigures
 
 
 \end{document}
