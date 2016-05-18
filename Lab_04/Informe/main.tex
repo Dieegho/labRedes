@@ -42,7 +42,7 @@ La aplicación que usaremos en esta ocasión para simular las distintas redes se
 La primera actividad consiste en analizar los problemas producidos cuando una topología de red presenta enlaces redundantes y se generan bucles. Luego se comparan los resultados al incorporar el protocolo STP(IEE 802.1d) a los equipos de la red y se analizarán las ventajas que este ofrece a la hora de enfrentarse a la redundancia de la red.
  %insertar pantallazo de la red
  %si es posible rellenar con los switch  coloquenlos donde dejé un parentesis, si no borren el parentesis
-La red consiste en tres switches()  conectados entre si. Luego se envían paquetes desde el switch0 hasta el switch 2 y posteriormente desde el switch2 hasta el switch1.
+La red consiste en tres switches()  conectados entre si. Luego se envían paquetes desde el switch0 hasta el switch2 y posteriormente desde el switch2 hasta el switch1.
 %responder preguntas aquí.
 
 En esta actividad montamos 3 switch Cisco interconectados como se muestra en la siguiente imagen 
@@ -54,51 +54,52 @@ En esta actividad montamos 3 switch Cisco interconectados como se muestra en la 
 	\linebreak
 \end{figure}
 
-\subsection{¿Qué camino realizara un paquete que para llegar desde el switch
-0 hasta el switch2?}
-
-\subsection{¿Qué camino realizara un paquete que para llegar desde el switch
-2 hasta el switch1?}
-
+\subsection{¿Qué camino realizara un paquete que para llegar desde el switch0 hasta el switch2?}
+El paquete va directo desde el switch0 al switch2
+\subsection{¿Qué camino realizara un paquete que para llegar desde el switch2 hasta el switch1?}
+El paquete se dirige primero desde el switch2 al switch0 y luego se envia desde el switch0 al switch 1
 
 \section{Actividad II}
 Considerando la topología de la actividad I, se procede a configurar el switch1 como primario y el switch2 como secundario. Para lograr esto se deben ejecutar una serie de comandos en cada switch según como se vaya a configurar.
 %poner en negrita o subtitulado o la wea que sea esto:
 Para el switch primario:
-% \begin{center}
-%    Switch>Enable
-%Switch#configure terminal
-%Enter configuration commands, one per line. End with CNTL/
-%Switch(config)#spanning-tree vlan 1 root primary
-%Switch(config)#
-% \end{center}
-%Para el switch secundario:
-% \being{center}
-% Switch>Enable
-%Switch#configure terminal
-%Enter configuration commands, one per line. End with CNTL/
-%Switch(config)#spanning-tree vlan 1 root secondary
-%Switch(config)#
-% \being{center}
+\begin{flushleft}
+	Switch>Enable \\
+	Switch\#configure terminal \\
+	Enter configuration commands, one per line. End with CNTL/ \\
+	Switch(config)\#spanning-tree vlan 1 root primary \\
+	Switch(config)\# \\
+\end{flushleft}
+
+Para el switch secundario:
+
+\begin{flushleft}
+	Switch>Enable \\
+	Switch\#configure terminal\\
+	Enter configuration commands, one per line. End with CNTL/\\
+	Switch(config)\#spanning-tree vlan 1 root secondary\\
+	Switch(config)\#\\
+\end{flushleft}
+
  %responder las preguntas de la actividad 2
 
-\subsection{¿Qué camino realizara un paquete que para llegar desde el switch
-2 hasta el switch0?}
-
-\subsection{¿Qué camino realizara un paquete que para llegar desde el switch
-1 hasta el switch0?}
-
+\subsection{¿Qué camino realizara un paquete que para llegar desde el switch2 hasta el switch0?}
+El paquete se mueve directamente desde el switch2 al switch0
+\subsection{¿Qué camino realizara un paquete que para llegar desde el switch1 hasta el switch0?}
+El paquete se mueve directamente desde el switch1 al switch0
 
 
 \section{Actividad III}
 Para esta tercera actividad, se establecerá una prioridad para cada uno de los tres switches y se analiza el comportamiento de STP en relación a esta. Para asignar una prioridad a un switch se deben ingresar estos comandos:
-%\being{center}
-% Switch>Enable
-%Switch#configure terminal
-%Enter configuration commands, one per line. End with CNTL/
-%Switch(config)#spanning-tree vlan 1 priority “NUMERO”
-%Switch(config)#
-%\being{center}
+
+\begin{flushleft}	
+	Switch>Enable\\
+	Switch\#configure terminal\\
+	Enter configuration commands, one per line. End with CNTL/\\
+	Switch(config)\#spanning-tree vlan 1 priority “NUMERO”\\
+	Switch(config)\#	\\
+\end{flushleft}
+
 
 \section{Actividad IV}
 
@@ -119,12 +120,11 @@ La diferencia se encuentra que en el modo Access permite el paso de una VLAN, mi
 
 \subsection{¿Qué ocurre si conecto dos switches, uno en modo access y otro en modo trunk?}
 
-\subsection{¿Qué camino realizara un paquete que para llegar desde el switch 1 hasta el
-switch 0?}
+\subsection{¿Qué camino realizara un paquete que para llegar desde el switch 1 hasta el switch 0?}
 
 Seguirá el camino de el enlace que comparten.
 
-
+\chapter{Conclusión}
 \listoffigures
 
 
