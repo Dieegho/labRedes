@@ -1,4 +1,4 @@
-\documentclass[spanish]{udpreport}
+﻿\documentclass[spanish]{udpreport}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{float}
@@ -117,8 +117,10 @@ En esta actividad debemos montar una topologia de red que contiene 6 Switch y 8 
 La diferencia se encuentra que en el modo Access permite el paso de una VLAN, mientras que el modo Trunk permite el paso de un conjunto de VLAN
 
 \subsection{¿Qué ocurre si conecto una puerta en modo Trunk a un PC?}
+Este PC pasaría a formar parte de todas las VLAN conectadas a el por medio de la puerta en modo trunk.
 
 \subsection{¿Qué ocurre si conecto dos switches, uno en modo access y otro en modo trunk?}
+Entre ellos funcionarían como si ambos switches estuvieran en modo access con a VLAN del switch en modo access pues cualquier paquete de otra VLAN enviado por el switch en modo trunk seria descartado y este tampoco recibiría paquetes de esas VLAN porque el otro switch no los enviaría.
 
 \subsection{¿Qué camino realizara un paquete que para llegar desde el switch 1 hasta el switch 0?}
 
