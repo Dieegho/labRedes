@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2016.3.29)  18 MAY 2016 01:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2016.3.29)  18 MAY 2016 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -726,13 +726,13 @@ less on input line 88.
 ]
 File: imagenes/A4e.png Graphic file (type eps)
  <imagenes/A4e.png>
-LaTeX Info: Redefining \. on input line 127.
-LaTeX Info: Redefining \% on input line 127.
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
  [5]
 Cap\'{\i }tulo 4.
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 128.
+less on input line 132.
 
 [6
 
@@ -748,7 +748,7 @@ LaTeX Info: Redefining \% on input line 2.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 131.
+less on input line 135.
 
 [7
 
@@ -761,10 +761,10 @@ LaTeX Info: Redefining \% on input line 10.
 Here is how much of TeX's memory you used:
  13402 strings out of 493305
  246245 string characters out of 6139897
- 469173 words of memory out of 5000000
+ 469174 words of memory out of 5000000
  16644 multiletter control sequences out of 15000+600000
  5942 words of font info for 22 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  70i,11n,62p,797b,1440s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (8 pages, 90196 bytes).
+Output written on main.dvi (8 pages, 91148 bytes).
