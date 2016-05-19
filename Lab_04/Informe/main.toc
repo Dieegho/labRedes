@@ -14,5 +14,5 @@
 \contentsline {subsection}{\numberline {3.4.1}\IeC {\textquestiondown }Cu\IeC {\'a}l es la diferencia del modo Access y el modo Trunk en un switch?}{5}
 \contentsline {subsection}{\numberline {3.4.2}\IeC {\textquestiondown }Qu\IeC {\'e} ocurre si conecto una puerta en modo Trunk a un PC?}{5}
 \contentsline {subsection}{\numberline {3.4.3}\IeC {\textquestiondown }Qu\IeC {\'e} ocurre si conecto dos switches, uno en modo access y otro en modo trunk?}{5}
-\contentsline {subsection}{\numberline {3.4.4}\IeC {\textquestiondown }Qu\IeC {\'e} camino realizara un paquete que para llegar desde el switch 1 hasta el switch 0?}{5}
-\contentsline {chapter}{\numberline {4}Conclusi\IeC {\'o}n}{6}
+\contentsline {subsection}{\numberline {3.4.4}\IeC {\textquestiondown }Qu\IeC {\'e} camino realizara un paquete que para llegar desde el switch 1 hasta el switch 0?}{6}
+\contentsline {chapter}{\numberline {4}Conclusi\IeC {\'o}n}{7}
