@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{float}
+\usepackage{subcaption}
 
 
 % Podemos establecer el logo de alguna entidad o dejar el de la UDP (defecto)
@@ -111,6 +112,23 @@ En esta actividad debemos montar una topologia de red que contiene 6 Switch y 8 
 	\centering
 	\includegraphics[scale=.6]{imagenes/A4e.png}
 	\linebreak
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{tabular}{ l  r }
+	\begin{subfigure}{0.5\textwidth}
+		\label{fig:Figura 2.4.1}
+		\includegraphics[width=0.9\linewidth]{imagenes/A4_1e.png}
+		\caption{Configuracion Access VLAN}
+	\end{subfigure}
+	&
+	\begin{subfigure}{0.5\textwidth}
+		\label{fig:Figura 2.4.2}
+		\includegraphics[width=0.9\linewidth]{imagenes/A4_2e.png}
+		\caption{Configuracion Trunk VLAN}
+	\end{subfigure}
+\end{tabular}
 \end{figure}
 
 \subsection{¿Cuál es la diferencia del modo Access y el modo Trunk en un switch?}
