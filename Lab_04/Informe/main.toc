@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {3.2}Actividad II}{5}
 \contentsline {subsection}{\numberline {3.2.1}\IeC {\textquestiondown }Qu\IeC {\'e} camino realizara un paquete que para llegar desde el switch2 hasta el switch0?}{5}
 \contentsline {subsection}{\numberline {3.2.2}\IeC {\textquestiondown }Qu\IeC {\'e} camino realizara un paquete que para llegar desde el switch1 hasta el switch0?}{5}
-\contentsline {section}{\numberline {3.3}Actividad III}{5}
+\contentsline {section}{\numberline {3.3}Actividad III}{6}
 \contentsline {section}{\numberline {3.4}Actividad IV}{6}
 \contentsline {subsection}{\numberline {3.4.1}\IeC {\textquestiondown }Cu\IeC {\'a}l es la diferencia del modo Access y el modo Trunk en un switch?}{7}
 \contentsline {subsection}{\numberline {3.4.2}\IeC {\textquestiondown }Qu\IeC {\'e} ocurre si conecto una puerta en modo Trunk a un PC?}{7}

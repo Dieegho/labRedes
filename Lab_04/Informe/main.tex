@@ -37,6 +37,14 @@ Este laboratorio consistió en armar una simulación de red en Packet Tracer con
 \chapter{Software utilizado}
 La aplicación que usaremos en esta ocasión para simular las distintas redes sera Packet Tracer. Este programa es propiedad de Cisco y nos permite experimentar con el comportamiento de la red y resolver preguntas de que ocurriría con la red si realizamos cierta configuración o conexión de dispositivos.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.25]{imagenes/A0e.png}
+	\caption{Packet Tracer}
+	\label{fig:Figura 1.1}
+\end{figure}
+
+
 \chapter{Actividades}
 
 \section{Actividad I}
@@ -48,11 +56,10 @@ La red consiste en tres switches()  conectados entre si. Luego se envían paquet
 
 En esta actividad montamos 3 switch Cisco interconectados como se muestra en la siguiente imagen 
 \begin{figure}[H]
-	\caption{Topología Actividad I}
 	\centering
 	\includegraphics[scale=.25]{imagenes/A1.png}
 	\label{fig:Figura 2.1}
-	\linebreak
+	\caption{Topología Actividad I}
 \end{figure}
 
 \subsection{¿Qué camino realizara un paquete que para llegar desde el switch0 hasta el switch2?}
@@ -81,6 +88,13 @@ Para el switch secundario:
 	Switch(config)\#spanning-tree vlan 1 root secondary\\
 	Switch(config)\#\\
 \end{flushleft}
+
+\begin{figure}[H]
+	\label{fig:Figura 2.2}
+	\centering
+	\includegraphics[scale=.25]{imagenes/A2_2e.png}
+	\caption{Configuracion STP}
+\end{figure}
 
  %responder las preguntas de la actividad 2
 
