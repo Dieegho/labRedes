@@ -2,8 +2,12 @@
 \select@language {spanish}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Packet Tracer\relax }}{3}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Topolog\IeC {\'\i }a Actividad I\relax }}{4}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Topolog\IeC {\'\i }a Actividad IV\relax }}{6}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Configuracion VLAN\relax }}{7}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Configuracion STP\relax }}{5}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Configuracion STP Priority\relax }}{6}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Topolog\IeC {\'\i }a Actividad IV\relax }}{7}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Configuracion VLAN\relax }}{7}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Enlace Switch 1 - Switch 0\relax }}{8}
 \addvspace {10\p@ }

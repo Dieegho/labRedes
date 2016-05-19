@@ -37,6 +37,14 @@ Este laboratorio consistió en armar una simulación de red en Packet Tracer con
 \chapter{Software utilizado}
 La aplicación que usaremos en esta ocasión para simular las distintas redes sera Packet Tracer. Este programa es propiedad de Cisco y nos permite experimentar con el comportamiento de la red y resolver preguntas de que ocurriría con la red si realizamos cierta configuración o conexión de dispositivos.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.25]{imagenes/A0e.png}
+	\caption{Packet Tracer}
+	\label{fig:Figura 1.1}
+\end{figure}
+
+
 \chapter{Actividades}
 
 \section{Actividad I}
@@ -48,11 +56,10 @@ La red consiste en tres switches()  conectados entre si. Luego se envían paquet
 
 En esta actividad montamos 3 switch Cisco interconectados como se muestra en la siguiente imagen 
 \begin{figure}[H]
-	\caption{Topología Actividad I}
 	\centering
 	\includegraphics[scale=.25]{imagenes/A1.png}
 	\label{fig:Figura 2.1}
-	\linebreak
+	\caption{Topología Actividad I}
 \end{figure}
 
 \subsection{¿Qué camino realizara un paquete que para llegar desde el switch0 hasta el switch2?}
@@ -65,7 +72,7 @@ Considerando la topología de la actividad I, se procede a configurar el switch1
 %poner en negrita o subtitulado o la wea que sea esto:
 Para el switch primario:
 \begin{flushleft}
-	Switch>Enable \\
+	Switch$>$Enable \\
 	Switch\#configure terminal \\
 	Enter configuration commands, one per line. End with CNTL/ \\
 	Switch(config)\#spanning-tree vlan 1 root primary \\
@@ -75,12 +82,19 @@ Para el switch primario:
 Para el switch secundario:
 
 \begin{flushleft}
-	Switch>Enable \\
+	Switch$>$Enable \\
 	Switch\#configure terminal\\
 	Enter configuration commands, one per line. End with CNTL/\\
 	Switch(config)\#spanning-tree vlan 1 root secondary\\
 	Switch(config)\#\\
 \end{flushleft}
+
+\begin{figure}[H]
+	\label{fig:Figura 2.2}
+	\centering
+	\includegraphics[scale=.25]{imagenes/A2_2e.png}
+	\caption{Configuracion STP}
+\end{figure}
 
  %responder las preguntas de la actividad 2
 
@@ -94,12 +108,19 @@ El paquete se mueve directamente desde el switch1 al switch0
 Para esta tercera actividad, se establecerá una prioridad para cada uno de los tres switches y se analiza el comportamiento de STP en relación a esta. Para asignar una prioridad a un switch se deben ingresar estos comandos:
 
 \begin{flushleft}	
-	Switch>Enable\\
+	Switch$>$Enable\\
 	Switch\#configure terminal\\
 	Enter configuration commands, one per line. End with CNTL/\\
 	Switch(config)\#spanning-tree vlan 1 priority “NUMERO”\\
 	Switch(config)\#	\\
 \end{flushleft}
+
+\begin{figure}[H]
+	\label{fig:Figura 2.3}
+	\centering
+	\includegraphics[scale=.25]{imagenes/A3_1e.png}
+	\caption{Configuracion STP Priority}
+\end{figure}
 
 Al cambiar las prioridades de los switches en la red, nos dimos cuenta que el switch con mayor prioridad terminaba siendo el root switch mientras que el de menor prioridad bloqueada sus puertos hacia el root switch evitando de esta forma que se creara un bucle en la red.
 \section{Actividad IV}
@@ -144,6 +165,13 @@ Entre ellos funcionarían como si ambos switches estuvieran en modo access con l
 \subsection{¿Qué camino realizara un paquete que para llegar desde el switch 1 hasta el switch 0?}
 
 Seguirá el camino de el enlace que comparten.
+
+\begin{figure}[H]
+	\label{fig:Figura 2.3}
+	\centering
+	\includegraphics[scale=.5]{imagenes/A4_3ep.png}
+	\caption{Enlace Switch 1 - Switch  0}
+\end{figure}
 
 \chapter{Conclusión}
 Los resultados de las actividades relacionadas al STP nos mostraron que éste bloquea puertos de forma automática para evitar bucles, también notamos que la prioridad y asignación de switch primario y secundarios afectan el criterio con que el protocolo elige que puertos bloquear. En la actividad de VLAN vimos que la asignación de diferentes VLANs impide que interactúen equipos los cuales no forman parte de la misma VLAN por medio de los switch que filtran el paso de los paquetes, de esto se concluye que este método hace que cada VLAN funcione como una red independiente sin que lo sean físicamente.
