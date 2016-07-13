@@ -8,7 +8,7 @@
 % Podemos establecer el logo de alguna entidad o dejar el de la UDP (defecto)
 %\setlogo{EITFI}
 
-\title{Informe Laboratorio ** \\ Redes de Datos}
+\title{Informe Laboratorio 5 \\ Redes de Datos}
 % ** Numero del lab
 \author{Arturo Mantinetti \\ Manuel Tobar \\ Diego Vilches \\ Nicolas Henriquez}
 \email{arturo.mantinetti@mail.udp.cl \\ manuel.tobar@mail.udp.cl
@@ -31,6 +31,102 @@
 \maketitle
 
 \tableofcontents
+
+\chapter{Introducción}
+
+Este laboratorio consistió en armar una simulación de red en Packet Tracer con distintas configuraciones dentro de la red para comprender el funcionamiento del ruteo estático y el ruteo dinámico.
+
+\chapter{Software utilizado}
+La aplicación que usaremos en esta ocasión para simular las distintas redes sera Packet Tracer. Este programa es propiedad de Cisco y nos permite experimentar con el comportamiento de la red y resolver preguntas de que ocurriría con la red si realizamos cierta configuración o conexión de dispositivos.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.25]{imagenes/A0e.png}
+	\caption{Packet Tracer}
+	\label{fig:Figura 1.1}
+\end{figure}
+
+
+\chapter{Actividades}
+
+\section{Actividad I}
+
+La primera actividad consiste en montar una una topología tipo anillo con los rourter y debajo de estos una topología del tipo árbol.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.25]{imagenes/red.png}
+	\caption{Topología de Red}
+	\label{fig:Figura 2.1}
+\end{figure}
+
+\section{Actividad II}
+
+Esta actividad consiste en configurar los equipos con sus respectivas IP's, Mascaras y Puertas de Enlace.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.25]{imagenes/ips.png}
+	\caption{Configuración de Equipos}
+	\label{fig:Figura 3.1}
+\end{figure}
+
+
+\section{Actividad III}
+
+En esta parte del laboratorio configuramos los rourters con ruteo estatico
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.25]{imagenes/ruteo_estatico.png}
+	\caption{Configuración Ruteo Estático}
+	\label{fig:Figura 4.1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.25]{imagenes/test_restatico.png}
+	\caption{Test Ruteo Estático}
+	\label{fig:Figura 4.2}
+\end{figure}
+
+\section{Actividad IV}
+
+En esta parte del laboratorio configuramos los rourters con ruteo dinámico
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.25]{imagenes/ruteo_dinamic.png}
+	\caption{Configuración Ruteo Dinámico}
+	\label{fig:Figura 4.1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.25]{imagenes/test_rdinamic.png}
+	\caption{Test Ruteo Dinámico}
+	\label{fig:Figura 4.2}
+\end{figure}
+
+\subsection{¿Qué ventajas y desventajas se pueden apreciar en cada tipo de enrutamiento?}
+\begin{table}[H]
+\centering
+\begin{tabular}{p{8cm}|p{8cm}}
+\textbf{Enrutamiento Dinámico} & \textbf{Enrutamiento Estático} \\
+     Se debe configurar el enrutamiento en cada router de la red &
+     Los routers aprenden a enrutarse con los demas rourters de la red \\
+     El rourter comparte su tabla de enrutamiento  & 
+     El rourter NO comparte su tabla de enrutamiento  \\
+     Los rourters tienen capacidad de modificar su enrutamiento en caso de fallo de red &
+     Los rourters no tienen capacidad de reaccionar en caso de un fallo de red \\
+     Utiliza mas CPU & 
+     Minimiza el uso de CPU \\    
+\end{tabular}
+\end{table}
+
+\subsection{¿En que se basa el enrutamiento dinámico para generar su ruta?}
+
+
 
 
 \listoffigures
