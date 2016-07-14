@@ -37,7 +37,7 @@
 Este laboratorio consistió en armar una simulación de red en Packet Tracer con distintas configuraciones dentro de la red para comprender el funcionamiento del ruteo estático y el ruteo dinámico.
 
 \chapter{Software utilizado}
-La aplicación que usaremos en esta ocasión para simular las distintas redes sera Packet Tracer. Este programa es propiedad de Cisco y nos permite experimentar con el comportamiento de la red y resolver preguntas de que ocurriría con la red si realizamos cierta configuración o conexión de dispositivos.
+La aplicación usada en esta ocasión para simular las distintas redes sera Packet Tracer. Este programa es propiedad de Cisco y permite experimentar con el comportamiento de la red y resolver preguntas de que ocurriría con la red si realizamos cierta configuración o conexión de dispositivos.
 
 \begin{figure}[H]
 	\centering
@@ -51,7 +51,7 @@ La aplicación que usaremos en esta ocasión para simular las distintas redes se
 
 \section{Actividad I}
 
-La primera actividad consiste en montar una una topología tipo anillo con los rourter y debajo de estos una topología del tipo árbol.
+La primera actividad consiste en montar una topología tipo anillo con cuatro routers. Desde cada router una topología tipo árbol, compuesta por un switch y dos computadores cada una.
 
 \begin{figure}[H]
 	\centering
@@ -62,7 +62,7 @@ La primera actividad consiste en montar una una topología tipo anillo con los r
 
 \section{Actividad II}
 
-Esta actividad consiste en configurar los equipos con sus respectivas IP's, Mascaras y Puertas de Enlace.
+Esta actividad consiste en configurar los equipos con sus respectivas IP's, Mascaras y Puertas de Enlace. Cada conjunto de equipos estaba conectado a un router con una red distinta, además de que fue establecida una red distinta para los routers interconectados.
 
 \begin{figure}[H]
 	\centering
@@ -74,7 +74,7 @@ Esta actividad consiste en configurar los equipos con sus respectivas IP's, Masc
 
 \section{Actividad III}
 
-En esta parte del laboratorio configuramos los rourters con ruteo estatico
+En esta parte del laboratorio se configuraron los rourters con ruteo estatico
 
 \begin{figure}[H]
 	\centering
@@ -92,7 +92,7 @@ En esta parte del laboratorio configuramos los rourters con ruteo estatico
 
 \section{Actividad IV}
 
-En esta parte del laboratorio configuramos los rourters con ruteo dinámico
+Finalmente, en esta actividad del laboratorio, se configuraron los routers con ruteo dinámico
 
 \begin{figure}[H]
 	\centering
@@ -125,7 +125,7 @@ En esta parte del laboratorio configuramos los rourters con ruteo dinámico
 \end{table}
 
 \subsection{¿En que se basa el enrutamiento dinámico para generar su ruta?}
-
+El enrutamiento dinámico genera la ruta óptima en base a la información obtenida en tiempo real por algún protocolo de routing. Según el protocolo de ruteo, se pueden ocupar uno de dos algoritmos, vector distancia y estado de enlace. En el primero, cada router conoce la distancia de sus vecinos directamente conectados y les envía esta información. A su vez, estos le otorgarán la información sobre sus redes alcanzables y sus distancias. En el segundo, la distancia de un router y sus vecinos es enviada por broadcast a todos los routers de la red.
 
 
 
