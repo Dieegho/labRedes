@@ -51,7 +51,7 @@ La aplicación usada en esta ocasión para simular las distintas redes sera Pack
 
 \section{Actividad I}
 
-La primera actividad consiste en montar una topología tipo anillo con cuatro routers. Desde cada router una topología tipo árbol, compuesta por un switch y dos computadores cada una.
+La primera actividad consiste en montar una topología tipo anillo con cuatro routers. Desde cada router una topología tipo árbol, compuesta por un switch y dos computadores cada una. Como es mostrado en la siguiente imagen.
 
 \begin{figure}[H]
 	\centering
@@ -62,7 +62,7 @@ La primera actividad consiste en montar una topología tipo anillo con cuatro ro
 
 \section{Actividad II}
 
-Esta actividad consiste en configurar los equipos con sus respectivas IP's, Mascaras y Puertas de Enlace. Cada conjunto de equipos estaba conectado a un router con una red distinta, además de que fue establecida una red distinta para los routers interconectados.
+Esta actividad consiste en configurar los equipos con sus respectivas IP's, Mascaras y Puertas de Enlace. Cada conjunto de equipos estaba conectado a un router con una red distinta, además de que fue establecida una red diferente para los routers interconectados.
 
 \begin{figure}[H]
 	\centering
@@ -74,7 +74,7 @@ Esta actividad consiste en configurar los equipos con sus respectivas IP's, Masc
 
 \section{Actividad III}
 
-En esta parte del laboratorio se configuraron los rourters con ruteo estatico
+En esta actividad se configuran manualmente las tablas de ruteo de cada uno de los routers. Se le asignan a los routers la dirección que deben ir cada uno de los paquetes en la red.
 
 \begin{figure}[H]
 	\centering
@@ -92,8 +92,7 @@ En esta parte del laboratorio se configuraron los rourters con ruteo estatico
 
 \section{Actividad IV}
 
-Finalmente, en esta actividad del laboratorio, se configuraron los routers con ruteo dinámico
-
+En esta actividad se configuran las tablas de ruteo con un protocolo de ruteo, en este caso RIP. Se le asigna a cada router que subred deben recibir.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=.25]{imagenes/ruteo_dinamic.png}
@@ -114,7 +113,7 @@ Finalmente, en esta actividad del laboratorio, se configuraron los routers con r
 \begin{tabular}{p{8cm}|p{8cm}}
 \textbf{Enrutamiento Dinámico} & \textbf{Enrutamiento Estático} \\
      Se debe configurar el enrutamiento en cada router de la red &
-     Los routers aprenden a enrutarse con los demas rourters de la red \\
+     Los routers aprenden a enrutarse con los demás rourters de la red \\
      El rourter comparte su tabla de enrutamiento  & 
      El rourter NO comparte su tabla de enrutamiento  \\
      Los rourters tienen capacidad de modificar su enrutamiento en caso de fallo de red &
