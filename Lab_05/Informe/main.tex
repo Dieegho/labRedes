@@ -1,0 +1,200 @@
+\documentclass[spanish]{udpreport}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{float}
+\usepackage{subcaption}
+
+
+% Podemos establecer el logo de alguna entidad o dejar el de la UDP (defecto)
+%\setlogo{EITFI}
+
+\title{Informe Laboratorio 5 \\ Redes de Datos}
+% ** Numero del lab
+\author{Arturo Mantinetti \\ Manuel Tobar \\ Diego Vilches \\ Nicolas Henriquez}
+\email{arturo.mantinetti@mail.udp.cl \\ manuel.tobar@mail.udp.cl
+	\\ diego.vilches@mail.udp.cl \\ nicolas.henriquez@mail.udp.cl}
+
+\profesor{Profesor \\ Jaime Álvarez}
+\ayudante{Ayudante \\ Maximiliano Vega}
+
+
+\date{16 de Julio de 2016}
+% ** = Dia de entrega
+
+% Además podemos establecer la facultad y escuela
+% los valores por defecto son los siguientes:
+%\udpschool{Escuela de Informática y Telecomunicaciones}
+%\udpfaculty{Facultad de Ingeniería}
+%\udpuniversity{Universidad Diego Portales}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\chapter{Introducción}
+
+A lo largo del semestre han habido variados Laboratorios de Redes de Datos con distintas temáticas con el fin de aprender o poner en practica ciertos aspectos.
+Este laboratorio consistió en armar una simulación de red en Packet Tracer con distintas configuraciones dentro de la red con 4 routers conectados entre si, siendo estos los responsables de interconectar las redes y decidir a quien enviar el trafico, para estos existen básicamente 2 estrategias, ruteo estático y el ruteo dinámico, que pondremos a prueba para comprender el como configurarlas y como funcionan.
+
+\chapter{Software utilizado}
+La aplicación usada en esta ocasión para simular las distintas redes sera Packet Tracer. Este programa es propiedad de Cisco y permite experimentar con el comportamiento de la red y resolver preguntas de que ocurriría con la red si se realiza cierta configuración o conexión de dispositivos.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.25]{imagenes/A0e.png}
+	\caption{Packet Tracer}
+	\label{fig:Figura 1.1}
+\end{figure}
+
+
+\chapter{Actividades}
+
+\section{Actividad I}
+
+La primera actividad consiste en montar una topología tipo anillo con cuatro routers. Desde cada router una topología tipo árbol, compuesta por un switch y dos computadores cada una. Como es mostrado en la siguiente imagen.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.25]{imagenes/red.png}
+	\caption{Topología de Red}
+	\label{fig:Figura 2.1}
+\end{figure}
+
+\pagebreak
+
+\section{Actividad II}
+
+Esta actividad consiste en configurar los equipos con sus respectivas IP's, Mascaras y Puertas de Enlace. Cada conjunto de equipos estaba conectado a un router con una red distinta, además de que fue establecida una red diferente para los routers interconectados.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{p{3cm}|p{4cm}|p{4cm}}
+\textbf{Equipo} & \textbf{Interfaz} & \textbf{IP} \\
+       Router 4 & GigabitEthernet0/0 & 10.0.10.1\textbackslash 24 \\
+       Router 4 & Serial0/3/0 & 10.0.1.2\textbackslash 30 \\
+       Router 4 & Serial0/3/1 & 10.0.3.1\textbackslash 30 \\
+       Router 21 & GigabitEthernet0/0 & 10.0.11.1\textbackslash 24 \\
+       Router 21 & Serial0/3/0 & 10.0.3.1\textbackslash 30 \\
+       Router 21 & Serial0/3/1 & 10.0.2.2\textbackslash 30 \\
+       Router 22 & GigabitEthernet0/0 & 10.0.12.1\textbackslash 24 \\
+       Router 22 & Serial0/3/0 & 10.0.3.2\textbackslash 30 \\
+       Router 22 & Serial0/3/1 & 10.0.4.1\textbackslash 30 \\
+       Router 20 & GigabitEthernet0/0 & 10.0.13.1\textbackslash 24 \\
+       Router 20 & Serial0/3/0 & 10.0.1.1\textbackslash 30 \\
+       Router 20 & Serial0/3/1 & 10.0.4.2\textbackslash 30 \\
+       PC0 & FastEthernet0 & 10.0.13.10\textbackslash 24 \\
+       PC1 & FastEthernet0 & 10.0.13.11\textbackslash 24 \\
+       PC2 & FastEthernet0 & 10.0.12.11\textbackslash 24 \\
+       PC3 & FastEthernet0 & 10.0.12.10\textbackslash 24 \\
+       PC4 & FastEthernet0 & 10.0.10.11\textbackslash 24 \\
+       PC5 & FastEthernet0 & 10.0.10.10\textbackslash 24 \\
+       PC6 & FastEthernet0 & 10.0.11.10\textbackslash 24 \\
+       PC7 & FastEthernet0 & 10.0.11.11\textbackslash 24 \\
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.25]{imagenes/ips.png}
+	\caption{Configuración de Equipos}
+	\label{fig:Figura 3.1}
+\end{figure}
+
+
+\section{Actividad III}
+
+En esta actividad se configuran manualmente las tablas de ruteo de cada uno de los routers. Se le asignan a los routers la dirección que deben ir cada uno de los paquetes en la red.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{p{3cm}|p{4cm}|p{4cm}}
+\textbf{Equipo} & \textbf{Red} & \textbf{Salto} \\
+       Router 4 & 10.0.11.0\textbackslash 24& 10.0.2.2 \\
+       Router 4 & 10.0.12.0\textbackslash 24& 10.0.2.2 \\
+       Router 4 & 10.0.13.0\textbackslash 24& 10.0.1.1 \\
+       Router 21 & 10.0.10.0\textbackslash 24& 10.0.2.1 \\
+       Router 21 & 10.0.12.0\textbackslash 24& 10.0.3.2 \\
+       Router 21 & 10.0.13.0\textbackslash 24& 10.0.3.2 \\
+       Router 22 & 10.0.10.0\textbackslash 24& 10.0.4.2 \\
+       Router 22 & 10.0.11.0\textbackslash 24& 10.0.3.1 \\
+       Router 22 & 10.0.13.0\textbackslash 24& 10.0.4.2 \\
+       Router 20 & 10.0.10.0\textbackslash 24& 10.0.1.2 \\
+       Router 20 & 10.0.11.0\textbackslash 24& 10.0.1.2 \\
+       Router 20 & 10.0.12.0\textbackslash 24& 10.0.4.1 \\
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.25]{imagenes/ruteo_estatico.png}
+	\caption{Configuración Ruteo Estático}
+	\label{fig:Figura 4.1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.25]{imagenes/test_restatico.png}
+	\caption{Test Ruteo Estático}
+	\label{fig:Figura 4.2}
+\end{figure}
+
+\pagebreak
+
+\section{Actividad IV}
+
+En esta actividad se configuran las tablas de ruteo con un protocolo de ruteo, en este caso RIP. Se le asigna a cada router que subred deben recibir.
+\begin{table}[H]
+\centering
+\begin{tabular}{p{3cm}|p{4cm}}
+\textbf{Equipo} & \textbf{Red} \\
+       Router 4 & 10.0.0.0\\
+       Router 20 & 10.0.0.0\\
+       Router 21 & 10.0.0.0\\
+       Router 22 & 10.0.0.0\\
+
+\end{tabular}
+\end{table}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.25]{imagenes/ruteo_dinamic.png}
+	\caption{Configuración Ruteo Dinámico}
+	\label{fig:Figura 4.1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=.25]{imagenes/test_rdinamic.png}
+	\caption{Test Ruteo Dinámico}
+	\label{fig:Figura 4.2}
+\end{figure}
+
+\subsection{¿Qué ventajas y desventajas se pueden apreciar en cada tipo de enrutamiento?}
+\begin{table}[H]
+\centering
+\begin{tabular}{p{8cm}|p{8cm}}
+\textbf{Enrutamiento Dinámico} & \textbf{Enrutamiento Estático} \\
+     Los routers aprenden a enrutarse con los demás routers de la red &
+     Se debe configurar el enrutamiento en cada router de la red \\
+     El router comparte su tabla de enrutamiento  &
+     El router NO comparte su tabla de enrutamiento  \\
+     Los routers tienen capacidad de modificar su enrutamiento en caso de fallo de red &
+     Los routers no tienen capacidad de reaccionar en caso de un fallo de red \\
+     Utiliza mas CPU &
+     Minimiza el uso de CPU \\
+\end{tabular}
+\end{table}
+
+\subsection{¿En que se basa el enrutamiento dinámico para generar su ruta?}
+El enrutamiento dinámico genera la ruta óptima en base a la información obtenida en tiempo real por algún protocolo de routing. Según el protocolo de ruteo, se pueden ocupar uno de dos algoritmos, vector distancia y estado de enlace. En el primero, cada router conoce la distancia de sus vecinos directamente conectados y les envía esta información. A su vez, estos le otorgarán la información sobre sus redes alcanzables y sus distancias. En el segundo, la distancia de un router y sus vecinos es enviada por broadcast a todos los routers de la red.
+
+\chapter{Conclusiones}
+
+ A partir de lo realizado durante el laboratorio se aprendió en qué consisten los enrutamientos dinámicos y estáticos y como estos son implementados en la práctica. El enrutamiento estático resultó tener un proceso de configuración relativamente largo y tedioso aun para una red pequeña como la del laboratorio por lo que se puede concluir que a pesar de su mayor eficiencia en términos de recursos, a medida que la red que debe ser configurada es cada vez más grande el proceso de configuración se vuelve exponencialmente más largo lo que lo que hace que el ahorro de CPU deje de compensar por el tiempo de configuración, a esto se le suma la incapacidad de actualizar las tablas de rutas o de solucionar fallos en la red de forma automática lo que profundiza aun más el problema del tiempo de configuración. Por otro lado el enrutamiento dinámico no sufre de problemas de tiempos de configuración debido a que el proceso es automático por lo que tanto el tamaño de la red como los cambios que esta sufra no significan ningún problema, la desventaja del ruteo dinámico es el uso de recursos que se requieren para que los routers mantengan sus tablas de ruteo actualizadas lo que hace de este menos eficiente que el ruteo estático. A partir de lo aprendido sobre ambos métodos se concluye que el ruteo estático es la mejor opción cuando la red es pequeña y se sabe que esta no crecerá mucho ni sufrirá demasiados fallos de conexión entre routers, por otra parte el sacrificio de recursos que requiere el ruteo estático vale la pena cuando la red es demasiado grande, cambiante o inestable.
+
+
+
+\listoffigures
+
+
+\end{document}

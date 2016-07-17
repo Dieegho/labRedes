@@ -1,0 +1,12 @@
+\select@language {spanish}
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{2}
+\contentsline {chapter}{\numberline {2}Software utilizado}{3}
+\contentsline {chapter}{\numberline {3}Actividades}{4}
+\contentsline {section}{\numberline {3.1}Actividad I}{4}
+\contentsline {section}{\numberline {3.2}Actividad II}{5}
+\contentsline {section}{\numberline {3.3}Actividad III}{6}
+\contentsline {section}{\numberline {3.4}Actividad IV}{8}
+\contentsline {subsection}{\numberline {3.4.1}\IeC {\textquestiondown }Qu\IeC {\'e} ventajas y desventajas se pueden apreciar en cada tipo de enrutamiento?}{9}
+\contentsline {subsection}{\numberline {3.4.2}\IeC {\textquestiondown }En que se basa el enrutamiento din\IeC {\'a}mico para generar su ruta?}{9}
+\contentsline {chapter}{\numberline {4}Conclusiones}{10}
