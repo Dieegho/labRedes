@@ -13,7 +13,7 @@
 \author{Arturo Mantinetti \\ Manuel Tobar \\ Diego Vilches \\ Nicolas Henriquez}
 \email{arturo.mantinetti@mail.udp.cl \\ manuel.tobar@mail.udp.cl
 	\\ diego.vilches@mail.udp.cl \\ nicolas.henriquez@mail.udp.cl}
-	
+
 \profesor{Profesor \\ Jaime Álvarez}
 \ayudante{Ayudante \\ Maximiliano Vega}
 
@@ -35,7 +35,7 @@
 \chapter{Introducción}
 
 A lo largo del semestre hemos tenido que realizar variados Laboratorios de Redes de Datos con distintas temáticas con el fin de aprender o poner en practica ciertos aspectos.
-Este laboratorio consistió en armar una simulación de red en Packet Tracer con distintas configuraciones dentro de la red con 4 rourters conectados entre si, siendo estos los responsables de interconectar las redes y decidir a quien enviar el trafico, para estos existen básicamente 2 estrategias, ruteo estático y el ruteo dinámico, que pondremos a prueba para comprender el como configurarlas y como funcionan.
+Este laboratorio consistió en armar una simulación de red en Packet Tracer con distintas configuraciones dentro de la red con 4 routers conectados entre si, siendo estos los responsables de interconectar las redes y decidir a quien enviar el trafico, para estos existen básicamente 2 estrategias, ruteo estático y el ruteo dinámico, que pondremos a prueba para comprender el como configurarlas y como funcionan.
 
 \chapter{Software utilizado}
 La aplicación usada en esta ocasión para simular las distintas redes sera Packet Tracer. Este programa es propiedad de Cisco y permite experimentar con el comportamiento de la red y resolver preguntas de que ocurriría con la red si se realiza cierta configuración o conexión de dispositivos.
@@ -61,7 +61,7 @@ La primera actividad consiste en montar una topología tipo anillo con cuatro ro
 	\label{fig:Figura 2.1}
 \end{figure}
 
-\pagebreak 
+\pagebreak
 
 \section{Actividad II}
 
@@ -71,18 +71,18 @@ Esta actividad consiste en configurar los equipos con sus respectivas IP's, Masc
 \centering
 \begin{tabular}{p{3cm}|p{4cm}|p{4cm}}
 \textbf{Equipo} & \textbf{Interfaz} & \textbf{IP} \\
-       Rourter 4 & GigabitEthernet0/0 & 10.0.10.1\textbackslash 24 \\
-       Rourter 4 & Serial0/3/0 & 10.0.1.2\textbackslash 30 \\
-       Rourter 4 & Serial0/3/1 & 10.0.3.1\textbackslash 30 \\
-       Rourter 21 & GigabitEthernet0/0 & 10.0.11.1\textbackslash 24 \\
-       Rourter 21 & Serial0/3/0 & 10.0.3.1\textbackslash 30 \\
-       Rourter 21 & Serial0/3/1 & 10.0.2.2\textbackslash 30 \\
-       Rourter 22 & GigabitEthernet0/0 & 10.0.12.1\textbackslash 24 \\
-       Rourter 22 & Serial0/3/0 & 10.0.3.2\textbackslash 30 \\
-       Rourter 22 & Serial0/3/1 & 10.0.4.1\textbackslash 30 \\
-       Rourter 20 & GigabitEthernet0/0 & 10.0.13.1\textbackslash 24 \\
-       Rourter 20 & Serial0/3/0 & 10.0.1.1\textbackslash 30 \\
-       Rourter 20 & Serial0/3/1 & 10.0.4.2\textbackslash 30 \\
+       Router 4 & GigabitEthernet0/0 & 10.0.10.1\textbackslash 24 \\
+       Router 4 & Serial0/3/0 & 10.0.1.2\textbackslash 30 \\
+       Router 4 & Serial0/3/1 & 10.0.3.1\textbackslash 30 \\
+       Router 21 & GigabitEthernet0/0 & 10.0.11.1\textbackslash 24 \\
+       Router 21 & Serial0/3/0 & 10.0.3.1\textbackslash 30 \\
+       Router 21 & Serial0/3/1 & 10.0.2.2\textbackslash 30 \\
+       Router 22 & GigabitEthernet0/0 & 10.0.12.1\textbackslash 24 \\
+       Router 22 & Serial0/3/0 & 10.0.3.2\textbackslash 30 \\
+       Router 22 & Serial0/3/1 & 10.0.4.1\textbackslash 30 \\
+       Router 20 & GigabitEthernet0/0 & 10.0.13.1\textbackslash 24 \\
+       Router 20 & Serial0/3/0 & 10.0.1.1\textbackslash 30 \\
+       Router 20 & Serial0/3/1 & 10.0.4.2\textbackslash 30 \\
        PC0 & FastEthernet0 & 10.0.13.10\textbackslash 24 \\
        PC1 & FastEthernet0 & 10.0.13.11\textbackslash 24 \\
        PC2 & FastEthernet0 & 10.0.12.11\textbackslash 24 \\
@@ -110,18 +110,18 @@ En esta actividad se configuran manualmente las tablas de ruteo de cada uno de l
 \centering
 \begin{tabular}{p{3cm}|p{4cm}|p{4cm}}
 \textbf{Equipo} & \textbf{Red} & \textbf{Salto} \\
-       Rourter 4 & 10.0.11.0\textbackslash 24& 10.0.2.2 \\
-       Rourter 4 & 10.0.12.0\textbackslash 24& 10.0.2.2 \\
-       Rourter 4 & 10.0.13.0\textbackslash 24& 10.0.1.1 \\
-       Rourter 21 & 10.0.10.0\textbackslash 24& 10.0.2.1 \\
-       Rourter 21 & 10.0.12.0\textbackslash 24& 10.0.3.2 \\
-       Rourter 21 & 10.0.13.0\textbackslash 24& 10.0.3.2 \\
-       Rourter 22 & 10.0.10.0\textbackslash 24& 10.0.4.2 \\
-       Rourter 22 & 10.0.11.0\textbackslash 24& 10.0.3.1 \\
-       Rourter 22 & 10.0.13.0\textbackslash 24& 10.0.4.2 \\
-       Rourter 20 & 10.0.10.0\textbackslash 24& 10.0.1.2 \\
-       Rourter 20 & 10.0.11.0\textbackslash 24& 10.0.1.2 \\
-       Rourter 20 & 10.0.12.0\textbackslash 24& 10.0.4.1 \\
+       Router 4 & 10.0.11.0\textbackslash 24& 10.0.2.2 \\
+       Router 4 & 10.0.12.0\textbackslash 24& 10.0.2.2 \\
+       Router 4 & 10.0.13.0\textbackslash 24& 10.0.1.1 \\
+       Router 21 & 10.0.10.0\textbackslash 24& 10.0.2.1 \\
+       Router 21 & 10.0.12.0\textbackslash 24& 10.0.3.2 \\
+       Router 21 & 10.0.13.0\textbackslash 24& 10.0.3.2 \\
+       Router 22 & 10.0.10.0\textbackslash 24& 10.0.4.2 \\
+       Router 22 & 10.0.11.0\textbackslash 24& 10.0.3.1 \\
+       Router 22 & 10.0.13.0\textbackslash 24& 10.0.4.2 \\
+       Router 20 & 10.0.10.0\textbackslash 24& 10.0.1.2 \\
+       Router 20 & 10.0.11.0\textbackslash 24& 10.0.1.2 \\
+       Router 20 & 10.0.12.0\textbackslash 24& 10.0.4.1 \\
 \end{tabular}
 \end{table}
 
@@ -139,7 +139,7 @@ En esta actividad se configuran manualmente las tablas de ruteo de cada uno de l
 	\label{fig:Figura 4.2}
 \end{figure}
 
-\pagebreak 
+\pagebreak
 
 \section{Actividad IV}
 
@@ -148,11 +148,11 @@ En esta actividad se configuran las tablas de ruteo con un protocolo de ruteo, e
 \centering
 \begin{tabular}{p{3cm}|p{4cm}}
 \textbf{Equipo} & \textbf{Red} \\
-       Rourter 4 & 10.0.0.0\\
-       Rourter 20 & 10.0.0.0\\
-       Rourter 21 & 10.0.0.0\\
-       Rourter 22 & 10.0.0.0\\
-       
+       Router 4 & 10.0.0.0\\
+       Router 20 & 10.0.0.0\\
+       Router 21 & 10.0.0.0\\
+       Router 22 & 10.0.0.0\\
+
 \end{tabular}
 \end{table}
 \begin{figure}[H]
@@ -174,14 +174,14 @@ En esta actividad se configuran las tablas de ruteo con un protocolo de ruteo, e
 \centering
 \begin{tabular}{p{8cm}|p{8cm}}
 \textbf{Enrutamiento Dinámico} & \textbf{Enrutamiento Estático} \\
-     Los routers aprenden a enrutarse con los demás rourters de la red &
+     Los routers aprenden a enrutarse con los demás routers de la red &
      Se debe configurar el enrutamiento en cada router de la red \\
-     El rourter comparte su tabla de enrutamiento  & 
-     El rourter NO comparte su tabla de enrutamiento  \\
-     Los rourters tienen capacidad de modificar su enrutamiento en caso de fallo de red &
-     Los rourters no tienen capacidad de reaccionar en caso de un fallo de red \\
-     Utiliza mas CPU & 
-     Minimiza el uso de CPU \\    
+     El router comparte su tabla de enrutamiento  &
+     El router NO comparte su tabla de enrutamiento  \\
+     Los routers tienen capacidad de modificar su enrutamiento en caso de fallo de red &
+     Los routers no tienen capacidad de reaccionar en caso de un fallo de red \\
+     Utiliza mas CPU &
+     Minimiza el uso de CPU \\
 \end{tabular}
 \end{table}
 
