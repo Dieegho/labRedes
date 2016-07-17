@@ -9,3 +9,4 @@
 \contentsline {section}{\numberline {3.4}Actividad IV}{7}
 \contentsline {subsection}{\numberline {3.4.1}\IeC {\textquestiondown }Qu\IeC {\'e} ventajas y desventajas se pueden apreciar en cada tipo de enrutamiento?}{8}
 \contentsline {subsection}{\numberline {3.4.2}\IeC {\textquestiondown }En que se basa el enrutamiento din\IeC {\'a}mico para generar su ruta?}{8}
+\contentsline {chapter}{\numberline {4}conclusiones}{9}
