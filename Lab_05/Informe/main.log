@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.29)  16 JUL 2016 22:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.29)  16 JUL 2016 23:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -827,89 +827,100 @@ Overfull \hbox (9.7676pt too wide) in paragraph at lines 59--60
  [][] 
  []
 
-<imagenes/ips.png, id=24, 1927.2pt x 1084.05pt>
-File: imagenes/ips.png Graphic file (type png)
- <use imagenes/ips.png>
-Package pdftex.def Info: imagenes/ips.png used on input line 70.
-(pdftex.def)             Requested size: 481.79883pt x 271.01184pt.
-
-Overfull \hbox (9.7676pt too wide) in paragraph at lines 70--71
- [][] 
- []
-
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 74.
+less on input line 65.
 
 [4
 
  <./imagenes/red.png>]
-<imagenes/ruteo_estatico.png, id=28, 1927.2pt x 1084.05pt>
-File: imagenes/ruteo_estatico.png Graphic file (type png)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 74.
 
-<use imagenes/ruteo_estatico.png>
-Package pdftex.def Info: imagenes/ruteo_estatico.png used on input line 82.
-(pdftex.def)             Requested size: 481.79883pt x 271.01184pt.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
 
-Overfull \hbox (9.7676pt too wide) in paragraph at lines 82--83
- [][] 
- []
-
-LaTeX Info: Redefining \. on input line 86.
-LaTeX Info: Redefining \% on input line 86.
-[5 <./imagenes/ips.png>]
-<imagenes/test_restatico.png, id=32, 1927.2pt x 1084.05pt>
-File: imagenes/test_restatico.png Graphic file (type png)
-
-<use imagenes/test_restatico.png>
-Package pdftex.def Info: imagenes/test_restatico.png used on input line 89.
-(pdftex.def)             Requested size: 481.79883pt x 271.01184pt.
-
-Overfull \hbox (9.7676pt too wide) in paragraph at lines 89--90
- [][] 
- []
-
-<imagenes/ruteo_dinamic.png, id=33, 1927.2pt x 1084.05pt>
-File: imagenes/ruteo_dinamic.png Graphic file (type png)
-
-<use imagenes/ruteo_dinamic.png>
-Package pdftex.def Info: imagenes/ruteo_dinamic.png used on input line 99.
+<imagenes/ips.png, id=27, 1927.2pt x 1084.05pt>
+File: imagenes/ips.png Graphic file (type png)
+ <use imagenes/ips.png>
+Package pdftex.def Info: imagenes/ips.png used on input line 99.
 (pdftex.def)             Requested size: 481.79883pt x 271.01184pt.
 
 Overfull \hbox (9.7676pt too wide) in paragraph at lines 99--100
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 102.
-LaTeX Info: Redefining \% on input line 102.
-[6 <./imagenes/ruteo_estatico.png> <./imagenes/test_restatico.png>]
-<imagenes/test_rdinamic.png, id=38, 1927.2pt x 1084.05pt>
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+[5 <./imagenes/ips.png>]
+<imagenes/ruteo_estatico.png, id=32, 1927.2pt x 1084.05pt>
+File: imagenes/ruteo_estatico.png Graphic file (type png)
+
+<use imagenes/ruteo_estatico.png>
+Package pdftex.def Info: imagenes/ruteo_estatico.png used on input line 130.
+(pdftex.def)             Requested size: 481.79883pt x 271.01184pt.
+
+Overfull \hbox (9.7676pt too wide) in paragraph at lines 130--131
+ [][] 
+ []
+
+<imagenes/test_restatico.png, id=33, 1927.2pt x 1084.05pt>
+File: imagenes/test_restatico.png Graphic file (type png)
+
+<use imagenes/test_restatico.png>
+Package pdftex.def Info: imagenes/test_restatico.png used on input line 137.
+(pdftex.def)             Requested size: 481.79883pt x 271.01184pt.
+
+Overfull \hbox (9.7676pt too wide) in paragraph at lines 137--138
+ [][] 
+ []
+
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+[6 <./imagenes/ruteo_estatico.png>]
+LaTeX Info: Redefining \. on input line 143.
+LaTeX Info: Redefining \% on input line 143.
+ [7 <./imagenes/test_restatico.png>]
+<imagenes/ruteo_dinamic.png, id=41, 1927.2pt x 1084.05pt>
+File: imagenes/ruteo_dinamic.png Graphic file (type png)
+
+<use imagenes/ruteo_dinamic.png>
+Package pdftex.def Info: imagenes/ruteo_dinamic.png used on input line 149.
+(pdftex.def)             Requested size: 481.79883pt x 271.01184pt.
+
+Overfull \hbox (9.7676pt too wide) in paragraph at lines 149--150
+ [][] 
+ []
+
+<imagenes/test_rdinamic.png, id=42, 1927.2pt x 1084.05pt>
 File: imagenes/test_rdinamic.png Graphic file (type png)
 
 <use imagenes/test_rdinamic.png>
-Package pdftex.def Info: imagenes/test_rdinamic.png used on input line 106.
+Package pdftex.def Info: imagenes/test_rdinamic.png used on input line 156.
 (pdftex.def)             Requested size: 481.79883pt x 271.01184pt.
 
-Overfull \hbox (9.7676pt too wide) in paragraph at lines 106--107
+Overfull \hbox (9.7676pt too wide) in paragraph at lines 156--157
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 110.
-LaTeX Info: Redefining \% on input line 110.
-[7 <./imagenes/ruteo_dinamic.png>]
-Overfull \hbox (7.21284pt too wide) in paragraph at lines 114--125
+LaTeX Info: Redefining \. on input line 160.
+LaTeX Info: Redefining \% on input line 160.
+[8 <./imagenes/ruteo_dinamic.png>]
+Overfull \hbox (7.21284pt too wide) in paragraph at lines 164--175
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 130.
-LaTeX Info: Redefining \% on input line 130.
-[8 <./imagenes/test_rdinamic.png>]
+LaTeX Info: Redefining \. on input line 180.
+LaTeX Info: Redefining \% on input line 180.
+[9 <./imagenes/test_rdinamic.png>]
 Cap\'{\i }tulo 4.
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 136.
+less on input line 186.
 
-[9
+[10
 
 ] (./main.lof
 LaTeX Info: Redefining \. on input line 1.
@@ -923,9 +934,9 @@ LaTeX Info: Redefining \% on input line 2.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 139.
+less on input line 189.
 
-[10
+[11
 
 ] (./main.aux
 LaTeX Info: Redefining \. on input line 6.
@@ -938,21 +949,22 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15440 strings out of 493304
- 281038 string characters out of 6139871
- 483646 words of memory out of 5000000
- 18627 multiletter control sequences out of 15000+600000
+ 15457 strings out of 493304
+ 281333 string characters out of 6139871
+ 489646 words of memory out of 5000000
+ 18641 multiletter control sequences out of 15000+600000
  5942 words of font info for 22 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  70i,11n,62p,1641b,1438s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (11 pages, 1743713 bytes).
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (12 pages, 1753870 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
